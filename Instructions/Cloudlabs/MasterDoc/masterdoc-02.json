@@ -1,0 +1,12 @@
+[
+  {
+    "Name": "DP-900 Azure Data Fundamentals",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/junnhssn/DP-900T00A-Azure-Data-Fundamentals/master/Instructions/Cloudlabs/Module%2002%3A%20Lab%2002%3A%20Use%20SQL%20to%20query%20Azure%20SQL%20Database.md",
+        "Order": 1
+      }
+    ]
+  }
+]
