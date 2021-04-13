@@ -75,7 +75,7 @@ Over time if you realize you need additional compute power to keep up with deman
     
 
 
-### Task 2: Create your Azure Database for PostgreSQL service (optional)
+### Task 2: Create your Azure Database for PostgreSQL service (Optional)
  -------------------------------------------------
 
 In this exercise, you'll set up Azure Database for PostgreSQL
@@ -129,7 +129,7 @@ In this exercise, you'll set up Azure Database for PostgreSQL
 
     ![Screenshot of the Azure portal showing the Notifications menu with the Pin to dashboard button from a recent deployment success message highlighted.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-provision-deploy-relational-database-offerings-azure/media/6-notifications-complete-postgre.png)
     
-### Task 3 : Create your Azure Database for MySQL service (optional)
+### Task 3 : Create your Azure Database for MySQL service (Optional)
  --------------------------------------------
 
 In this exercise you'll set up Azure Database for MySQL
