@@ -1,0 +1,12 @@
+[
+  {
+    "Name": "DP-900 Azure Data Fundamentals",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/junnhssn/DP-900T00A-Azure-Data-Fundamentals/master/Instructions/Cloudlabs/Module%2003%3A%20Lab%2001%3A%20Provision%20non-relational%20Azure%20Data%20Services.md",
+        "Order": 1
+      }
+    ]
+  }
+]
