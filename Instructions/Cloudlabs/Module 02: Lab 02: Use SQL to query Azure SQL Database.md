@@ -45,8 +45,6 @@ Tip: Adding your client IP in this step will not account for any existing VPN co
 
 1.  Copy the following SQL statement into the editor. Select Run, to check everything is working. You should see a list of four inventory items
 
-    SQLCopy
-
     ```
     SELECT *
     FROM Inventory
@@ -56,8 +54,6 @@ Tip: Adding your client IP in this step will not account for any existing VPN co
     ![Run basic query in SQL Database Query Editor.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/query-relational-data/media/6-run-basic-query.png)
 
 2.  Replace the current SQL statement with the following statement to only show the number of bananas in stock:
-
-    SQLCopy
 
     ```
     SELECT *
@@ -71,8 +67,6 @@ Tip: Adding your client IP in this step will not account for any existing VPN co
     ![Run a WHERE query in SQL Database Query Editor.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/query-relational-data/media/6-select-where-sql-databases.png)
 
 3.  Replace the SQL statement with the following statement to retrieve the inventory items in order of the quantity in stock:
-
-    SQLCopy
 
     ```
     SELECT *
@@ -95,7 +89,7 @@ Tip: Adding your client IP in this step will not account for any existing VPN co
     ![Run a JOIN query in SQL Database Query Editor.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/query-relational-data/media/6-select-join-sql-databases.png)
 
 5.  Change the query to find the names of all customers who have ordered oranges.
-6.  
+  
     ```
     SELECT CustomerOrder.CustomerName
     FROM CustomerOrder
