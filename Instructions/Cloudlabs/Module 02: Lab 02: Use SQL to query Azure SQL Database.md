@@ -85,8 +85,6 @@ Tip: Adding your client IP in this step will not account for any existing VPN co
 
 4.  Replace the SQL statement with the statement shown below. This statement is a query that uses the JOIN operator to combine data from the *CustomerOrder* table and the *Inventory* table. It lists the details of orders placed by customers together with the inventory information for each item ordered:
 
-    SQLCopy
-
     ```
     SELECT *
     FROM Inventory
@@ -97,9 +95,7 @@ Tip: Adding your client IP in this step will not account for any existing VPN co
     ![Run a JOIN query in SQL Database Query Editor.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/query-relational-data/media/6-select-join-sql-databases.png)
 
 5.  Change the query to find the names of all customers who have ordered oranges.
-
-    SQLCopy
-
+6.  
     ```
     SELECT CustomerOrder.CustomerName
     FROM CustomerOrder
@@ -111,8 +107,6 @@ Tip: Adding your client IP in this step will not account for any existing VPN co
     This query should return two customers: John Smith and Jane Brown
 
 6.  Find out how many customers have ordered lemons. This query uses the COUNT(*) function, which returns the number of rows that match the query criteria.
-
-    SQLCopy
 
     ```
     SELECT COUNT(*)
@@ -126,8 +120,6 @@ Tip: Adding your client IP in this step will not account for any existing VPN co
 
 7.  Which fruits has John Smith ordered?
 
-    SQLCopy
-
     ```
     SELECT Inventory.Name
     FROM CustomerOrder
@@ -139,8 +131,6 @@ Tip: Adding your client IP in this step will not account for any existing VPN co
     The results of this query should show that John Smith has only ordered oranges.
 
 8.  What is the total quantity of items ordered by all customers? The *Quantity* column in the *CustomerOrder* table contains the quantity for each order. This query uses the SUM aggregate function to add the quantities together to product a grand total:
-
-    SQLCopy
 
     ```
     SELECT SUM(CustomerOrder.Quantity)
