@@ -1,4 +1,4 @@
-## Exercise 1: Provision Azure relational database services
+## Provision Azure relational database services
 
 As part of your role at Contoso as a data engineer, you've been asked to create and configure SQL Server, PostgreSQL, and MySQL servers for Azure.
 
