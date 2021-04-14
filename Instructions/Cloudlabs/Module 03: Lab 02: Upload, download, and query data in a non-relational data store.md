@@ -193,17 +193,16 @@ Note: The productinfo.json file contains the product information in JSON forma
 
     In the Allowed IP addresses box, enter the public IP address of your desktop computer.
 
-```
+
 Note: You can find the IP address of your desktop computer by visiting <https://whatismyipaddress.com/>
-```
 
-    Leave Allowed protocols set to HTTPS only, and then click Generate SAS and connection string.
+   Leave Allowed protocols set to HTTPS only, and then click Generate SAS and connection string.
 
-    Make a note of the values in the SAS token, Blob service SAS URL, and File service SAS URL fields.
+   Make a note of the values in the SAS token, Blob service SAS URL, and File service SAS URL fields.
 
  Tip: Copy these values to the clipboard, and paste them into a text file, using Notepad.
 
-    ![Image showing the Shared access signature page for the storage account](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-shared-access-signature-page.png)
+   ![Image showing the Shared access signature page for the storage account](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-shared-access-signature-page.png)
 
 5.  Return to your desktop computer, and start Azure Storage Explorer.
 
