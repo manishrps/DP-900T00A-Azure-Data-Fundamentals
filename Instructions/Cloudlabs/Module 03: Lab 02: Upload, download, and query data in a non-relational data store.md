@@ -1,11 +1,5 @@
 
-## Exercise 1: Upload, download, and query data in a non-relational data store
-
-In the sample scenario, suppose that you've created the following data stores:
-
--   A Cosmos DB for holding information about the products that Contoso manufactures.
--   A blob container in Azure Storage for holding the images of products.
--   A file share, in the same Azure Storage account, for holding product documentation.
+## Upload, download, and query data in a non-relational data store
 
 In this exercise, you'll upload data to these data stores. You'll run queries against the data in the Cosmos DB database. Finally, you'll download and view the images and documents held in Azure Storage.
 
@@ -29,16 +23,14 @@ In this exercise, you'll upload data to these data stores. You'll run queries ag
 
 6.  Open a command prompt window, move to a convenient folder, and run the following command to create another copy of the code and data required for the exercise.
 
-     Note
+```
+Note: You need a copy of the data on your computer because you'll run the tools to upload this data from your desktop.
+```
 
-    You need a copy of the data on your computer because you'll run the tools to upload this data from your desktop.
-
-    BashCopy
-
-    ```
+ ```
     git clone https://github.com/MicrosoftDocs/mslearn-explore-non-relational-data-stores-azure.git lab
 
-    ```
+ ```
 
 7.  Using File Explorer, move to the folder where you installed the Data Migration tool.
 
@@ -56,9 +48,9 @@ In this exercise, you'll upload data to these data stores. You'll run queries ag
 
 11. In the Open dialog box, browse to the folder on the desktop where you cloned the repository containing the sample data for the exercise, move to the lab folder, move to the products folder, and select the productinfo.json file. Select Open.
 
-     Note
-
-    The productinfo.json file contains the product information in JSON format. If you have time, you can examine the contents of this file using Notepad.
+```
+Note: The productinfo.json file contains the product information in JSON format. If you have time, you can examine the contents of this file using Notepad.
+```
 
 12. Back on the Source Information page, select Next
 
@@ -109,8 +101,6 @@ In this exercise, you'll upload data to these data stores. You'll run queries ag
 
 5.  In the Query 1 pane, enter the following query, and then select Execute Query. This query returns the name, color, listprice, description, and file name of the image for each model of mountain bike that Contoso make. The query should return 32 documents.
 
-    SQLCopy
-
     ```
     SELECT p.productname, p.color, p.listprice, p.description, p.images.thumbnail
     FROM products p
@@ -121,8 +111,6 @@ In this exercise, you'll upload data to these data stores. You'll run queries ag
     ![Image showing the list of mountain bikes returned by the query](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-mountain-bike-query.png)
 
 6.  Modify the query to return information about Road Bikes.
-
-    SQLCopy
 
     ```
     SELECT p.productname, p.color, p.listprice, p.description, p.images.thumbnail
@@ -135,8 +123,6 @@ In this exercise, you'll upload data to these data stores. You'll run queries ag
 
 7.  Replace the query with the following text. This query counts the number of Touring Bikes.
 
-    SQLCopy
-
     ```
     SELECT COUNT(p.productname)
     FROM products p
@@ -145,8 +131,6 @@ In this exercise, you'll upload data to these data stores. You'll run queries ag
     ```
 
     The data is returned as a document with a field named "$1" that has the value 22.
-
-    textCopy
 
     ```
     [
@@ -159,8 +143,6 @@ In this exercise, you'll upload data to these data stores. You'll run queries ag
 
 8.  Modify the query, and add the VALUE keyword as shown below.
 
-    SQLCopy
-
     ```
     SELECT VALUE COUNT(p.productname)
     FROM products p
@@ -169,9 +151,7 @@ In this exercise, you'll upload data to these data stores. You'll run queries ag
     ```
 
     This time the query just returns the value 22, and doesn't generate a field name.
-
-    textCopy
-
+    
     ```
     [
         22
@@ -180,8 +160,6 @@ In this exercise, you'll upload data to these data stores. You'll run queries ag
     ```
 
 9.  Run the following query:
-
-    SQLCopy
 
     ```
     SELECT VALUE SUM(p.quantityinstock)
@@ -215,17 +193,15 @@ In this exercise, you'll upload data to these data stores. You'll run queries ag
 
     In the Allowed IP addresses box, enter the public IP address of your desktop computer.
 
-     Note
-
-    You can find the IP address of your desktop computer by visiting <https://whatismyipaddress.com/>.
+```
+Note: You can find the IP address of your desktop computer by visiting <https://whatismyipaddress.com/>
+```
 
     Leave Allowed protocols set to HTTPS only, and then click Generate SAS and connection string.
 
     Make a note of the values in the SAS token, Blob service SAS URL, and File service SAS URL fields.
 
-     Tip
-
-    Copy these values to the clipboard, and paste them into a text file, using Notepad.
+ Tip: Copy these values to the clipboard, and paste them into a text file, using Notepad.
 
     ![Image showing the Shared access signature page for the storage account](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-shared-access-signature-page.png)
 
@@ -272,9 +248,9 @@ In this exercise, you'll upload data to these data stores. You'll run queries ag
 
     This command uploads all the files in the images folder to the images blob container in your storage account.
 
-     Note
-
-    You may see a message that starts with *No connection string, account key or sas token found*. You can ignore this message.
+```
+Note: You may see a message that starts with *No connection string, account key or sas token found*. You can ignore this message.
+```
 
 ### Task 4: View images in Azure Blob storage
 ---------------------------------
@@ -306,8 +282,6 @@ In this exercise, you'll upload data to these data stores. You'll run queries ag
 
 3.  Run the following command:
 
-    BashCopy
-
     ```
     bash findip.sh
 
@@ -332,8 +306,6 @@ In this exercise, you'll upload data to these data stores. You'll run queries ag
     Make a note of the SAS token that is generated.
 
 6.  Return to the Cloud Shell and run the following command. Replace <storage-account-name> with the name of your storage account, and replace <SAS-token> with the SAS token for your storage account that you generated in the previous step:
-
-    Azure CLICopy
 
     ```
     azcopy copy 'docs' 'https://<storage-account-name>.file.core.windows.net/documents/productdocs<SAS-token>' --recursive
