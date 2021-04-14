@@ -35,9 +35,10 @@ You'll use the built-in Query editor in the Azure portal to connect to the datab
 
     ![The SQL Database Query Editor.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/query-relational-data/media/6-simple-ui-query.png)
 
- Tip
+```
+Tip: Adding your client IP in this step will not account for any existing VPN connections. If you can't complete step 7, disable any VPN connections or add the additional IP address manually from any errors displayed.
+```
 
-Adding your client IP in this step will not account for any existing VPN connections. If you can't complete step 7, disable any VPN connections or add the additional IP address manually from any errors displayed.
 
 ### Task 2: Run queries against the database
 --------------------------------
