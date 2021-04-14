@@ -1,4 +1,4 @@
-## Exercise 1: Use SQL to query Azure SQL Database
+## Use SQL to query Azure SQL Database
 
 Contoso has provisioned the SQL database and has imported all the inventory data into the data store. As lead developer, you've been asked to run some queries over the data.
 
