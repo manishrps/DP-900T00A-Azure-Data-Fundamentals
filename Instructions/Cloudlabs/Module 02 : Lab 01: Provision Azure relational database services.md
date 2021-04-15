@@ -36,12 +36,12 @@ Over time if you realize you need additional compute power to keep up with deman
 
     | Setting | Value  |
     | --- | --- |
-    | Subscription | *Default Subscription* |
-    | Resource group | *DP900-DID* |
-    | Database name | *ContosoDID* |
-    | Want to use SQL elastic pool? | *No* |
+    | Subscription | **Default Subscription** |
+    | Resource group | **DP900-DID** |
+    | Database name | **ContosoDID** |
+    | Want to use SQL elastic pool? | **No** |
     
-- Note  Where *DID* is the DeploymentID (Unique Id) which can be found from the Environment Details page.
+- Note  Where **DID** is the DeploymentID (Unique Id) which can be found from the Environment Details page.
 
     ![create sql database](media/sql-database-create.png "Creating SQl database")
 
@@ -49,17 +49,17 @@ Over time if you realize you need additional compute power to keep up with deman
 
     | Setting | Value  |
     | --- | --- |
-    | Server name | *sqlDID* |
-    | Server admin login | *azureadmin* |
-    | Password | *Pa55w.rd* |
-    | Confirm password | *Pa55w.rd* |
-    | Location | Select the default location |
+    | Server name | **sqlDID** |
+    | Server admin login | **azureadmin** |
+    | Password | **Pa55w.rd** |
+    | Confirm password | **Pa55w.rd** |
+    | Location | **Select the default location** |
     
     ![new server](media/sql-new-server-create.png "new server")
 
 5.  Under Compute + storage, select Configure database.
 
-6.  On the General Purpose tab, leave vCores set to 2, change Data max size to 50 GB, and then select Apply.
+6.  On the General Purpose tab, leave vCores set to **2**, change Data max size to **50 GB**, and then select Apply.
 
 7.  Back on the Create SQL Database page, select Additional settings.
 
@@ -67,9 +67,9 @@ Over time if you realize you need additional compute power to keep up with deman
 
     | Setting | Value  |
     | --- | --- |
-    | Use existing data | *None* |
-    | Database Collation | *SQL_Latin1_General_CP1_CI_AS* |
-    | Maintenance window | *Default* |
+    | Use existing data | **None** |
+    | Database Collation | **SQL_Latin1_General_CP1_CI_AS** |
+    | Maintenance window | **Default** |
 
     ![new server](media/sql-database-additionalsetting.png "additional")
 
@@ -93,7 +93,7 @@ In this exercise, you'll set up Azure Database for PostgreSQL
 
     ![create postgre database](media/create-postgresql-database.png "create postgre database")
 
-3.  You will be presented with the choice of a Single server or Hyperscale. Select Create for the Single server option
+3.  You will be presented with the choice of a **Single server** or **Hyperscale**. Select Create for the Single server option
 
     ![select postgre service](media/postgresql-service-select.png "select postgre service")
 
@@ -101,24 +101,24 @@ In this exercise, you'll set up Azure Database for PostgreSQL
 
     | Setting | Value  |
     | --- | --- |
-    | Subscription | *Default Subscription* |
-    | Resource group | *DP900-DID* |
+    | Subscription | **Default Subscription** |
+    | Resource group | **DP900-DID** |
     
 
 5.  Under Server details, use these values
 
     | Setting | Value  |
     | --- | --- |
-    | Server name | Enter *postgresqlDID*, followed by your DID, Where *DID* is the DeploymentID (Unique Id) which can be found from the Environment Details page. |
-    | Data source | *None* |
-    | Location | Select the default location |
-    | Version | Keep default setting |
+    | Server name | Enter **postgresqlDID**, followed by your DID, Where *DID* is the DeploymentID (Unique Id) which can be found from the Environment Details page. |
+    | Data source | **None** |
+    | Location | **Select the default location** |
+    | Version | **Keep default setting** |
     
     ![select postgre service](media/postgresql-setup.png "select postgre service")
 
 6.  Under Compute + storage, select Configure server.
 
-7.  Change vCore to two cores, increase the storage to 160 GB, set the Backup Retention Period to 14 days, and then select OK.
+7.  Change vCore to **two cores**, increase the storage to **160 GB**, set the Backup Retention Period to **14 days**, and then select OK.
     
     ![select postgre service](media/postgresql-configure.png "postgre configure")
 
@@ -126,9 +126,9 @@ In this exercise, you'll set up Azure Database for PostgreSQL
 
     | Setting | Value  |
     | --- | --- |
-    | Admin username | *azureadmin* |
-    | Password | *Pa55w.rd* |
-    | Confirm password | *Pa55w.rd* |
+    | Admin username | **azureadmin** |
+    | Password | **Pa55w.rd** |
+    | Confirm password | **Pa55w.rd** |
 
 9.  Select Review + Create, and then select Create to create your Azure PostgreSQL database.
 
@@ -153,23 +153,23 @@ In this exercise you'll set up Azure Database for MySQL
 
     | Setting | Value  |
     | --- | --- |
-    | Subscription | *Default Subscription* |
-    | Resource group | *DP900-DID* |
+    | Subscription | **Default Subscription** |
+    | Resource group | **DP900-DID** |
 
 4.  Under Server details, use these values
 
     | Setting | Value  |
     | --- | --- |
-    | Server name | Enter *mysqlDID*, followed by your DID, Where *DID* is the DeploymentID (Unique Id) which can be found from the Environment Details page. |
-    | Data source | *None* |
-    | Location | Select the default location |
-    | Version | Keep default setting |
+    | Server name | Enter **mysqlDID**, followed by your DID, Where *DID* is the DeploymentID (Unique Id) which can be found from the Environment Details page. |
+    | Data source | **None** |
+    | Location | **Select the default location** |
+    | Version | **Keep default setting** |
 
     ![mysql create](media/mysql-create.png "mysql create")
 
 5.  Under Compute + storage, select configure server.
 
-6.  On the Pricing tier page, reduce vCore to two cores, set Storage to 160 GB, change Backup Retention Period to 14 days, and then select apply.
+6.  On the Pricing tier page, reduce vCore to **two cores**, set Storage to **160 GB**, change Backup Retention Period to **14 days**, and then select apply.
 
     ![configure azure database](media/configure-azure-database-mysql.png "configure azure database") 
 
@@ -177,9 +177,9 @@ In this exercise you'll set up Azure Database for MySQL
 
     | Setting | Value  |
     | --- | --- |
-    | Admin username | azureadmin |
-    | Password | Pa55w.rd |
-    | Confirm password | Pa55w.rd |
+    | Admin username | **azureadmin** |
+    | Password | **Pa55w.rd** |
+    | Confirm password | **Pa55w.rd** |
 
 8.  Select Review + Create, and then select Create to create your Azure MySQL database.
 
