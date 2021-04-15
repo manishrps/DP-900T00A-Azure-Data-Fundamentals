@@ -13,7 +13,7 @@ In this exercise, you'll upload data to these data stores. You'll run queries ag
 
     ![Image of home page in the Azure portal. The user has selected Cosmos DB](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-home-page.png)
 
-3.  On the Azure Cosmos DB page, select the Cosmos DB account that was created by the setup script.
+3.  On the Azure Cosmos DB page, select the Cosmos DB account with name cosmos{deploymentID} present in the page.
 
 4.  On the Cosmos DB account page, under Settings, select Keys. Copy the PRIMARY CONNECTION STRING to the clipboard.
 
