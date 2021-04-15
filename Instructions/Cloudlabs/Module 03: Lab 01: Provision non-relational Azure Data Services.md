@@ -1,4 +1,4 @@
-## Provision non-relational Azure data services
+# Lab 1: Provision non-relational Azure data services
 
 In the sample scenario, you've decided to create the following data stores:
 
@@ -20,73 +20,81 @@ Note: Azure can take as little as 5 minutes or as long as 20 minutes to create t
 
 ### Step 1 : Create a Cosmos DB account
 
-1.  Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com).
+1.  Open Edge Browser and log in to the Azure portal. When prompted, use the credentials provided within the environment Details tab of the lab guide.
+
+    ![Environment details](media/environment-details.png "Environment details")
 
 2.  From the left-hand navigation menu in the Azure portal, select Create a resource.
 
-    ![Image From the left-hand navigation menu in the Azure portal. The user has selected Create a resource](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-provision-deploy-non-relational-data-services-azure/media/7-create-resource.png)
+    ![create a resource](media/create-a-resource-navigation.png "create a resource")
 
 3.  On the New page, select Azure Cosmos DB.
 
-    ![Image of the New page in the Azure portal. The user has selected Azure Cosmos DB](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-provision-deploy-non-relational-data-services-azure/media/7-new-page.png)
+    ![select cosmosdb](media/select-cosmosdb.png "select cosmosdb")
 
 4.  On the Create Azure Cosmos DB Account page, on the Basics tabs, enter the details of the account using the values in the following table, and then select Review + create:
 
-    TABLE 1
     | Field | Value |
     | --- | --- |
-    | Subscription | Concierge Subscription |
-    | Resource Group | [sandbox resource group] (this resource group will have been created for you in the sandbox) |
-    | Account Name | Enter a unique name, such as your initials, the date (in numeric format), and the text *cosmosdbaccount*. For example, *jpws01012020cosmosdbaccount* |
-    | API | Core (SQL) |
-    | Location | Accept the default location |
-    | Capacity mode | Provisioned throughput |
-    | Apply Free Tier Discount | Do Not Apply |
-    | Account Type | Non-Production |
-    | Geo-Redundancy | Disable |
-    | Multi-region Writes | Disable |
+    | Subscription | **Default Subscription** |
+    | Resource Group | **DP900-DID** |
+    | Account Name | **cosmosdbaccountDID** |
+    | API | **Core (SQL)** |
+    | Location | **Accept the default location** |
+    | Capacity mode | **Provisioned throughput** |
+    | Apply Free Tier Discount | **Do Not Apply** |
+    | Account Type | **Non-Production** |
+    | Geo-Redundancy | **Disable** |
+    | Multi-region Writes | **Disable** |
+    
+- Note  Where **DID** is the DeploymentID (Unique Id) which can be found from the Environment Details page.
+
+    ![createcosmosdb](media/create-cosmosdb-1.png "create cosmosdb")
+    
+    
+    ![createcosmosdb](media/create-cosmosdb-2.png "create cosmosdb")
+
 
 5.  Wait while your settings are validated. If there's a problem, it will be reported at this stage, and you can go back and correct the issue.
 
 6.  Select Create. It can take 10 or 15 minutes to create the account.
 
-    ![Image of the Validation page in the Azure portal. The user has selected Create](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-provision-deploy-non-relational-data-services-azure/media/7-create-cosmos-db.png)
-
+    ![validation success](media/validation-success.png "validation success")
+    
 ### Step 2 : Create a database and a container
 
 1.  In the Azure portal, in the left-hand navigation menu, select All resources, and then select your Cosmos DB account.
 
-    ![Image of the left-hand navigation menu in the Azure portal. The user has selected All resources.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-provision-deploy-non-relational-data-services-azure/media/7-resources.png)
+    ![all resources](media/all-resources.png "all resources")
 
-2.  On the page for your Cosmos DB account, select Data Explorer.
+2.  On the page for your Cosmos DB account, select **Data Explorer**.
 
-    ![Image of the Cosmos DB account page. The user has selected Data Explorer.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-provision-deploy-non-relational-data-services-azure/media/7-cosmos-db-account.png)
+    ![cosmosdb startpage](media/cosmosdb-startpage.png "cosmosdb startpage")
 
-3.  On the Data Explorer page, select New Container.
+3.  On the Data Explorer page, select **New Container**.
 
-    ![Image of the Data Explorer page. The user has selected New Container.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-provision-deploy-non-relational-data-services-azure/media/7-data-explorer.png)
+    ![new container](media/select-new-container-cosmosdb.png " new Container")
 
-4.  In the Add Container dialog box, create a new container with the following values, and then select OK:
+4.  In the Add Container dialog box, create a new container with the following values, and then select **OK**:
 
-    TABLE 2
     | Field | Value |
     | --- | --- |
-    | Database ID | Select Create new, and enter contosodb |
-    | Provision database throughput | Check |
-    | Throughput | Select Manual, and specify 400 RU/s (the default) |
-    | Container ID | productvolumes |
-    | Partition key | /productid (Each product will have a new level recorded each day. Partitioning by product ID enables you to quickly report how the levels for a product vary over time.) |
-    | My partition key is larger than 100 bytes | Leave unchecked |
+    | Database ID | Select Create new, and enter **contosodb** |
+    | Provision database throughput | **Check** |
+    | Throughput | Select **Manual**, and specify 400 RU/s (the default) |
+    | Container ID | **productvolumes** |
+    | Partition key | **/productid** (Each product will have a new level recorded each day. Partitioning by product ID enables you to quickly report how the levels for a product vary over time.) |
+    | My partition key is larger than 100 bytes | **Leave unchecked** |
 
-    ![Image of the Add Container dialog box. The user has provided the parameters for a new database and container.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-provision-deploy-non-relational-data-services-azure/media/7-container.png)
+    ![configure container cosmosdb](media/configure-container-cosmosdb.png "configure container cosmosdb")
 
-5.  In the Data Explorer window. Expand contosodb, expand productvolumes, and then click Items. The container should currently be empty.
+5.  In the Data Explorer window. Expand contosodb, expand productvolumes, and then click **Items**. The container should currently be empty.
 
-    ![Image of the Data Explorer window after the contosodb database has been created. The user is viewing the items in the productvolumes container.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-provision-deploy-non-relational-data-services-azure/media/7-empty-items.png)
+    ![container new item](media/cosmos-container-item.png "container new item")
 
-6.  Select New Item to create a new document.
+6.  Select **New Item** to create a new document.
 
-    ![Image of the Items page for the customers container. The user has selected New Item.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-provision-deploy-non-relational-data-services-azure/media/7-new-item.png)
+    ![container new item](media/container-new-item.png "container new item")
 
 7.  Replace the text that appears in the document window with the following JSON document. This is an example document showing the amount of product 99 in stock on 01/01/2020.
 
@@ -103,7 +111,7 @@ Note: Azure can take as little as 5 minutes or as long as 20 minutes to create t
 
 8.  Select Save. The document will be added to the container. The new document will have some additional fields that Cosmos DB uses to track and manage the document. You can ignore these fields for now.
 
-    ![Image of the new document, including the fields added by Cosmos DB.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-provision-deploy-non-relational-data-services-azure/media/7-new-document.png)
+    ![container populated](media/populated-item-container.png "populated item container")
 
 You've now provisioned a new Cosmos DB account, and created a database and container.
 
@@ -114,26 +122,31 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
 
 1.  On the left-hand navigation menu in the Azure portal, select Create a resource.
 
+    ![create a resource](media/create-a-resource-navigation.png "create a resource")
+    
 2.  On the New page, select Storage account - blob, file, table, queue.
 
-    ![Image of the New page in the Azure portal. The user has selected Storage account - blob, file, table, queue](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-provision-deploy-non-relational-data-services-azure/media/7-new-page-2.png)
+    ![storage account select](media/storage-account-select.png "storage account select")
 
 3.  On the Create storage account page, on the Basics tabs, enter the details of the account using the values in the following table:
 
-    TABLE 3
     | Field | Value |
     | --- | --- |
-    | Subscription | Concierge Subscription |
-    | Resource Group | [sandbox resource group] |
-    | Storage account Name | Enter a unique name, such as your initials, the date (in numeric format), and the text *storage*. For example, *jpws01012020storage* |
-    | Performance | Standard |
-    | Account kind | Storage V2 (general purpose v2) |
-    | Replication | Read-access geo-redundant storage (RA-GRS) |
-    | Access tier | Hot |
+    | Subscription | **Default Subscription** |
+    | Resource Group | **DP900-DID** |
+    | Storage account Name | **datastorageDID** |
+    | Performance | **Standard** |
+    | Account kind | **Storage V2 (general purpose v2)** |
+    | Replication | **Read-access geo-redundant storage (RA-GRS)** |
+    | Access tier | **Hot** |
+    
+- Note  Where **DID** is the DeploymentID (Unique Id) which can be found from the Environment Details page.
+
+    ![new storage account](media/creating-sa-1.png "new sa")
 
 4.  Select Advanced. On the Advanced page, in the Data Lake Storage Gen2 section, select Enabled, and then select Review + create.
 
-    ![Image of the Advanced page in the Azure portal. The user has enabled Data Lake Storage](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-provision-deploy-non-relational-data-services-azure/media/7-advanced.png)
+    ![new storage account](media/creating-sa-2.png "new sa")
 
 5.  If your settings are validated correctly, select Create.
 
@@ -143,23 +156,24 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
 
 1.  In the Azure portal, on the left-hand navigation menu, select All resources, and then select your storage account.
 
-2.  On the page for your storage account, under Data Lake Storage, select Containers.
+2.  On the page for your storage account, under Data Lake Storage, select **Containers**.
 
-    ![Image of the storage account page. The user has selected Containers under Data Lake Storage.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-provision-deploy-non-relational-data-services-azure/media/7-data-lake-containers.png)
+    ![container](media/container-sa.png "container")
 
-3.  On the Containers page, select + Container, and create a new container named productqualitydata. Leave the Public access level set to Private (no anonymous access), and then click Create.
+3.  On the Containers page, select + Container, and create a new container named **productqualitydata**. Leave the Public access level set to **Private (no anonymous access)**, and then click Create.
 
-    ![Image of the storage account page. The user is creating a new Data Lake Storage container named productqualitydata.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-provision-deploy-non-relational-data-services-azure/media/7-new-dl-container.png)
+    ![container](media/new-container-sa.png "new container")
 
-4.  When the container has been created, double-click the productqualitydata container.
+4.  When the container has been created, double-click the **productqualitydata** container.
 
-5.  On the productqualitydata page, click + Add Directory, and add a directory named plantA.
+5.  On the productqualitydata page, click + Add Directory, and add a directory named **plantA**.
 
-6.  Add a second directory named plantB.
+    ![directory](media/add-directory-sa.png "directory")
+
+6.  Add a second directory named **plantB**.
 
     Contoso has two manufacturing plants named *Plant A* and *Plant B*. Other applications will upload manufacturing data from each of these plants to the appropriate directory for later analysis.
 
-    ![Image of the productqualitydata page. The user has created two directories named plantA and plantB.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-provision-deploy-non-relational-data-services-azure/media/7-directories.png)
 
 ### Step 3 : Create a container for Blob storage
 
@@ -167,12 +181,12 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
 
 2.  On the Overview page, select Containers.
 
-    ![Image of the Overview page for the storage account. The user has selected Containers.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-provision-deploy-non-relational-data-services-azure/media/7-blob-containers.png)
+    ![container](media/container-sa-homescreen.png "container")
 
-3.  On the Containers page, select + Container, and create a new container named images. Set the Public access level to Blob (anonymous read access for blobs only).
+3.  On the Containers page, select + Container, and create a new container named **images**. Set the Public access level to **Blob (anonymous read access for blobs only)**.
 
-    ![Image of the Containers page for the storage account. The user is creating a new container named images.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-provision-deploy-non-relational-data-services-azure/media/7-create-blob-container.png)
-
+    ![container](media/images-container-sa.png "new container")
+    
     Contoso will use this container to hold product images.
 
 ```
@@ -181,24 +195,20 @@ Note: The container created for Data Lake Storage will also appear in the Conta
 
 ### Step 4 : Create a file share
 
-1.  On the storage account page, under File service select File shares.
+1.  On the storage account page, under File service select **File shares**.
 
-    ![Image of the Overview page for the storage account. The user has selected File shares.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-provision-deploy-non-relational-data-services-azure/media/7-file-shares.png)
+    ![File share](media/fs-sa-select.png "file share")
 
-2.  On the File shares page, select + File share.
+2.  On the File shares page, select + File share, create a new file share named reports. Leave the Quota **empty** and Tier as **Transaction optimized**.
 
-    ![Image of the File shares page for the storage account. The user has selected + File share.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-provision-deploy-non-relational-data-services-azure/media/7-new-file-share.png)
+    ![File share](media/add-fs-sa.png "file share")
 
-3.  Create a new file share named reports. Leave the Quota empty.
+3.  On the File shares page, double-click the reports file share.
 
-    ![Image of the New file share dialog box. The user has entered the name of the new file share.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-provision-deploy-non-relational-data-services-azure/media/7-create-file-share.png)
+4.  On the reports page, select + Add directory, and add a directory named **manufacturing**.
 
-4.  On the File shares page, double-click the reports file share.
+    ![File share](media/fs-add-directory.png "file share")
 
-5.  On the reports page, select + Add directory, and add a directory named manufacturing.
-
-6.  Add a second directory named complaints.
-
-    ![Image of the reports page, showing the manufacturing and complaints directories.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-provision-deploy-non-relational-data-services-azure/media/7-reports.png)
+5.  Add a second directory named **complaints**.
 
     Contoso will use these directories to hold documents relating to the manufacturing process and customers' complaints. A user that has been granted access to the reports file share can upload and download files from these directories.
