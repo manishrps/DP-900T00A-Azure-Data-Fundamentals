@@ -21,40 +21,38 @@ In this exercise, you'll upload data to these data stores. You'll run queries ag
 
 5.  Switch to your desktop computer.
 
-6.  Open a command prompt window, move to a convenient folder, and run the following command to create another copy of the code and data required for the exercise.
+6.  Open a command prompt window, navigate to desktop using the cd command, and run the second command to create another copy of the code and data required for the exercise.
 
-```
-Note: You need a copy of the data on your computer because you'll run the tools to upload this data from your desktop.
-```
+       >**Note**: You need a copy of the data on your computer because you'll run the tools to upload this data from your desktop.
 
- ```
-    git clone https://github.com/MicrosoftDocs/mslearn-explore-non-relational-data-stores-azure.git lab
+     ```
+        cd desktop
+        
+        git clone https://github.com/MicrosoftDocs/mslearn-explore-non-relational-data-stores-azure.git lab
 
- ```
+     ```
 
-7.  Using File Explorer, move to the folder where you installed the Data Migration tool.
-
-8.  Double-click the file dtui.exe. This application is the Data Migration Tool.
+7.  From the desktop, Double-click the file dtui.exe. This application is the Data Migration Tool.
 
     ![Image of File Explorer on the user's desktop. The user is in the folder for the Data Migration Tool, and is about to start the dtui.exe application.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-tools-folder.png)
 
-9.  On the Welcome page of the Data Migration Tool, select Next.
+8.  On the Welcome page of the Data Migration Tool, select Next.
 
     ![Image of the Welcome page in the Data Migration Tool](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-welcome.png)
 
-10. On the Source Information page, in the Import from drop-down list box, select JSON file(s). and then select Add Files.
+9. On the Source Information page, in the Import from drop-down list box, select JSON file(s). and then select Add Files.
 
     ![Image of the Source Information page in the Data Migration Tool](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-source.png)
 
-11. In the Open dialog box, browse to the folder on the desktop where you cloned the repository containing the sample data for the exercise, move to the lab folder, move to the products folder, and select the productinfo.json file. Select Open.
+10. In the Open dialog box, browse to the folder on the desktop where you cloned the repository containing the sample data for the exercise, move to the lab folder, move to the products folder, and select the productinfo.json file. Select Open.
 
 ```
 Note: The productinfo.json file contains the product information in JSON format. If you have time, you can examine the contents of this file using Notepad.
 ```
 
-12. Back on the Source Information page, select Next
+11. Back on the Source Information page, select Next
 
-13. On the Target Information page, enter the following settings, and then select Next.
+12. On the Target Information page, enter the following settings, and then select Next.
 
     TABLE 1
     | Field | Value |
@@ -68,19 +66,19 @@ Note: The productinfo.json file contains the product information in JSON forma
 
     ![Image of the Target Information page in the Data Migration Tool](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-target.png)
 
-14. On the Advanced page, leave all settings at their default values, and then select Next.
+13. On the Advanced page, leave all settings at their default values, and then select Next.
 
     ![Image of the Advanced page in the Data Migration Tool](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-advanced.png)
 
-15. On the Summary page, select Import.
+14. On the Summary page, select Import.
 
     ![Image of the Summary page in the Data Migration Tool](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-summary.png)
 
-16. Wait while the import proceeds. It should complete without any errors or warnings, and report that it has transferred 504 records.
+15. Wait while the import proceeds. It should complete without any errors or warnings, and report that it has transferred 504 records.
 
     ![Image of the Results page in the Data Migration Tool](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-results.png)
 
-17. Close the Data Migration Tool.
+16. Close the Data Migration Tool.
 
 ### Task 2: Query product data in Cosmos DB
 -------------------------------
