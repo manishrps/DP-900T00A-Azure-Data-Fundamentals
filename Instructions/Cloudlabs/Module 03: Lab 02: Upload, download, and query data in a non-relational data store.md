@@ -220,7 +220,7 @@ Note: You can find the IP address of your desktop computer by visiting <https:/
 
     ![Image showing the Connection Summary dialog box.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-shared-access-signature-connect.png)
 
-10. In Azure Storage Explorer, under Storage Accounts, expand Image Data. Verify that folders appear for Blob Containers and File Shares.
+10. In Azure Storage Explorer, under Storage Accounts, expand Storage{deploymentID}. Verify that folders appear for Blob Containers and File Shares.
 
     ![Image showing Azure Storage Explorer. The Image Data account has been attached](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-image-data-account.png)
 
