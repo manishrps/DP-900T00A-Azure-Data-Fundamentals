@@ -11,13 +11,15 @@ In this exercise, you'll upload data to these data stores. You'll run queries ag
 
 2.  On the home page, select Azure Cosmos DB.
 
-    ![Image of home page in the Azure portal. The user has selected Cosmos DB](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-home-page.png)
+    ![](media/lab4/1.png)
 
 3.  On the Azure Cosmos DB page, select the Cosmos DB account with name cosmos{deploymentID} present in the page.
 
+    ![](media/lab4/2.png)
+
 4.  On the Cosmos DB account page, under Settings, select Keys. Copy the PRIMARY CONNECTION STRING to the clipboard.
 
-    ![Image of Keys page for the Cosmos DB account. The user has selected the primary connection string](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-cosmos-key.png)
+    ![](media/lab4/3.png)
 
 5.  Switch to your desktop computer.
 
@@ -32,9 +34,10 @@ In this exercise, you'll upload data to these data stores. You'll run queries ag
 
      ```
 
-7.  From the desktop, Double-click the file dtui.exe. This application is the Data Migration Tool.
+    ![](media/lab4/4.png)
+7.  On the desktop, Double-click the file dtui.exe. This application is the Data Migration Tool.
 
-    ![Image of File Explorer on the user's desktop. The user is in the folder for the Data Migration Tool, and is about to start the dtui.exe application.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-tools-folder.png)
+    ![](media/lab4/5.png)
 
 8.  On the Welcome page of the Data Migration Tool, select Next.
 
@@ -46,10 +49,11 @@ In this exercise, you'll upload data to these data stores. You'll run queries ag
 
 10. In the Open dialog box, browse to the folder on the desktop where you cloned the repository containing the sample data for the exercise, move to the lab folder, move to the products folder, and select the productinfo.json file. Select Open.
 
-```
-Note: The productinfo.json file contains the product information in JSON format. If you have time, you can examine the contents of this file using Notepad.
-```
+    ```
+      Note: The productinfo.json file contains the product information in JSON format. If you have time, you can examine the contents of this file using Notepad.
+    ```
 
+    ![](media/lab4/6.png)
 11. Back on the Source Information page, select Next
 
 12. On the Target Information page, enter the following settings, and then select Next.
