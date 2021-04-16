@@ -1,4 +1,4 @@
-## Use SQL to query Azure SQL Database
+# Lab 1: Use SQL to query Azure SQL Database
 
 Contoso has provisioned the SQL database and has imported all the inventory data into the data store. As lead developer, you've been asked to run some queries over the data.
 
@@ -9,32 +9,40 @@ In this exercise, you'll query the database to find how many products are in the
 
 You'll use the built-in Query editor in the Azure portal to connect to the database and query the data.
 
-1.  Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com) using the same account you activated the sandbox with.
+1.  Open Edge Browser and log in to the Azure portal. When prompted, use the credentials provided within the environment Details tab of the lab guide.
 
-2.  In the portal, on the home page select SQL databases, and then select *Inventory* database located on the server you have just created.
+    ![Environment details](media/environment-details.png "Environment details")
 
-    ![SQL Databases menu option on the home screen.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/query-relational-data/media/6-select-sql-datbases.png)
+2.  In the portal, on the home page select **Resource groups**, and then select **DP900-DID** resource group.
 
-3.  On the Overview page for your database, select Set server firewall.
+    ![Resource group](media/dp-900-rg.png "dp-900 rg")
+    
 
-    ![The Overview page for the SQL Database instance. The user has selected Set server firewall.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/query-relational-data/media/6-server-firewall.png)
+3. Select the **Inventory SQL database**. 
+    
+    ![inventory](media/inventory-in-rg.png "inventory sql")
 
-4.  On the Firewall settings page, select Add client IP, and then select Save.
 
-    ![The Firewall settings page for the SQL Database instance. The user has selected Add client IP.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/query-relational-data/media/6-set-client-ip.png)
+3.  On the Overview page for your database, select **Set server firewall**.
+
+    ![server firewall](media/set-server-firewall.png "server firewall")
+    
+4.  On the Firewall settings page, select **Add client IP**, and then select **Save**.
+
+    ![server firewall add client ip](media/add-client-ip.png "client IP")
 
 5.  Close the Firewall settings page, and return to the Overview page for your database.
 
-6.  On the Overview page, select Query editor (preview) in the left menu.
+6.  On the Overview page, select **Query editor (preview)** in the left menu.
 
-7.  Enter the username and password you recorded earlier when the setup script ran, and then select OK.
+7.  Enter the username and password, this can be found from the **environment details** tab. Select **OK**.
 
-    ![The SQL Database sign-in page in the Azure portal.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/query-relational-data/media/6-query-editor-login.png)
+    ![db login](media/database-login.png "db login")
 
     You'll be presented with a screen similar to this example:
 
-    ![The SQL Database Query Editor.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/query-relational-data/media/6-simple-ui-query.png)
-
+    ![db query](media/database-query.png "db query")
+    
 ```
 Tip: Adding your client IP in this step will not account for any existing VPN connections. If you can't complete step 7, disable any VPN connections or add the additional IP address manually from any errors displayed.
 ```
@@ -43,7 +51,7 @@ Tip: Adding your client IP in this step will not account for any existing VPN co
 ### Task 2: Run queries against the database
 --------------------------------
 
-1.  Copy the following SQL statement into the editor. Select Run, to check everything is working. You should see a list of four inventory items
+1.  Copy the following SQL statement into the editor. Select **Run**, to check everything is working. You should see a list of four inventory items
 
     ```
     SELECT *
@@ -51,7 +59,7 @@ Tip: Adding your client IP in this step will not account for any existing VPN co
 
     ```
 
-    ![Run basic query in SQL Database Query Editor.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/query-relational-data/media/6-run-basic-query.png)
+    ![db query](media/select-star-inventory.png "db query")
 
 2.  Replace the current SQL statement with the following statement to only show the number of bananas in stock:
 
@@ -64,7 +72,7 @@ Tip: Adding your client IP in this step will not account for any existing VPN co
 
     There should be 150 bananas.
 
-    ![Run a WHERE query in SQL Database Query Editor.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/query-relational-data/media/6-select-where-sql-databases.png)
+    ![db query](media/select-banana.png "db query")
 
 3.  Replace the SQL statement with the following statement to retrieve the inventory items in order of the quantity in stock:
 
@@ -75,9 +83,9 @@ Tip: Adding your client IP in this step will not account for any existing VPN co
 
     ```
 
-    ![Run an ORDER query in SQL Database Query Editor.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/query-relational-data/media/6-select-order-sql-databases.png)
+    ![db query](media/orderby-stock.png "db query")
 
-4.  Replace the SQL statement with the statement shown below. This statement is a query that uses the JOIN operator to combine data from the *CustomerOrder* table and the *Inventory* table. It lists the details of orders placed by customers together with the inventory information for each item ordered:
+4.  Replace the SQL statement with the statement shown below. This statement is a query that uses the JOIN operator to combine data from the **CustomerOrder** table and the **Inventory** table. It lists the details of orders placed by customers together with the inventory information for each item ordered:
 
     ```
     SELECT *
@@ -86,7 +94,7 @@ Tip: Adding your client IP in this step will not account for any existing VPN co
 
     ```
 
-    ![Run a JOIN query in SQL Database Query Editor.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/query-relational-data/media/6-select-join-sql-databases.png)
+    ![db query](media/customer-order.png "db query")
 
 5.  Change the query to find the names of all customers who have ordered oranges.
   
@@ -100,7 +108,7 @@ Tip: Adding your client IP in this step will not account for any existing VPN co
 
     This query should return two customers: John Smith and Jane Brown
 
-6.  Find out how many customers have ordered lemons. This query uses the COUNT(*) function, which returns the number of rows that match the query criteria.
+6.  Find out how many customers have ordered lemons. This query uses the ```COUNT(*)``` function, which returns the number of rows that match the query criteria.
 
     ```
     SELECT COUNT(*)
@@ -124,14 +132,15 @@ Tip: Adding your client IP in this step will not account for any existing VPN co
 
     The results of this query should show that John Smith has only ordered oranges.
 
-8.  What is the total quantity of items ordered by all customers? The *Quantity* column in the *CustomerOrder* table contains the quantity for each order. This query uses the SUM aggregate function to add the quantities together to product a grand total:
+8.  What is the total quantity of items ordered by all customers? The **Quantity** column in the **CustomerOrder** table contains the quantity for each order. This query uses the SUM aggregate function to add the quantities together to product a grand total:
 
     ```
     SELECT SUM(CustomerOrder.Quantity)
     FROM CustomerOrder
-
     ```
 
     The answer should be 29.
-
+    
+    ![db query](media/final-result.png "db query")
+    
 You've now seen how to run SQL queries against a SQL database. If you have time, try to add some more rows into both tables using INSERT statements, modify the rows using UPDATE statements, and remove rows using DELETE statements.
