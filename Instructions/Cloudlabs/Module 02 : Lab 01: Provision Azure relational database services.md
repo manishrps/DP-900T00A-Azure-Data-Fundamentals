@@ -1,6 +1,4 @@
-# Lab 1: Provision Azure relational database services
-
-## Provision Azure relational database services
+# Provision Azure relational database services
 
 As part of your role at Contoso as a data engineer, you've been asked to create and configure SQL Server, PostgreSQL, and MySQL servers for Azure.
 
@@ -24,7 +22,7 @@ In this task you'll set up your Azure SQL Database instance, which includes crea
 
 Over time if you realize you need additional compute power to keep up with demand, you can adjust performance options or even switch between the DTU and vCore performance models.
 
-1.  Open Edge Browser and log in to the Azure portal. When prompted, use the credentials provided within the environment Details tab of the lab guide.
+1.  Open Edge Browser and log in to the Azure portal. When prompted, use the credentials provided within the Environment Details tab of the lab guide.
 
     ![Environment details](media/environment-details.png "Environment details")
     
