@@ -1,6 +1,4 @@
-# Lab 1: Provision Azure relational database services
-
-## Provision Azure relational database services
+# Provision Azure relational database services
 
 As part of your role at Contoso as a data engineer, you've been asked to create and configure SQL Server, PostgreSQL, and MySQL servers for Azure.
 
@@ -24,9 +22,15 @@ In this task you'll set up your Azure SQL Database instance, which includes crea
 
 Over time if you realize you need additional compute power to keep up with demand, you can adjust performance options or even switch between the DTU and vCore performance models.
 
-1.  Open Edge Browser and log in to the Azure portal. When prompted, use the credentials provided within the environment Details tab of the lab guide.
+1.  Open Edge Browser and log in to the Azure portal. When prompted, use the credentials provided within the Environment Details tab of the lab guide.
 
     ![Environment details](media/environment-details.png "Environment details")
+    
+---
+**NOTE**-
+ The DeploymentID (Unique Id) can be found from the Environment Details page.
+
+---
 
 2.  In the portal, select Create a resource from the upper left-hand corner. Select Databases, then select SQL Database.
 
@@ -38,10 +42,8 @@ Over time if you realize you need additional compute power to keep up with deman
     | --- | --- |
     | Subscription | **Default Subscription** |
     | Resource group | **DP900-DID** |
-    | Database name | **ContosoDID** |
+    | Database name | **ContosoDID**, Where **DID** is the DeploymentID (Unique Id) which can be found from the Environment Details page. |
     | Want to use SQL elastic pool? | **No** |
-    
-- Note  Where **DID** is the DeploymentID (Unique Id) which can be found from the Environment Details page.
 
     ![create sql database](media/sql-database-create.png "Creating SQl database")
 
@@ -49,7 +51,7 @@ Over time if you realize you need additional compute power to keep up with deman
 
     | Setting | Value  |
     | --- | --- |
-    | Server name | **sqlDID** |
+    | Server name | **sqlDID** ,Where **DID** is the DeploymentID (Unique Id) which can be found from the Environment Details page. |
     | Server admin login | **azureadmin** |
     | Password | **Pa55w.rd** |
     | Confirm password | **Pa55w.rd** |
@@ -78,8 +80,8 @@ Over time if you realize you need additional compute power to keep up with deman
 10. On the toolbar, select Notifications to monitor the deployment process.
 
     When the process completes, select Pin to dashboard to pin your database server to the dashboard so that you have quick access when you need it later.
-
-    ![Screenshot of the Azure portal showing the Notifications menu with the Pin to dashboard button from a recent deployment success message highlighted.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-provision-deploy-relational-database-offerings-azure/media/7-notifications-complete.png)
+    
+    ![Sql database](media/sqldatabase-deployment.png "Sql database")
     
 
 ### Task 2: Create your Azure Database for PostgreSQL service (Optional)
@@ -109,7 +111,7 @@ In this exercise, you'll set up Azure Database for PostgreSQL
 
     | Setting | Value  |
     | --- | --- |
-    | Server name | Enter **postgresqlDID**, followed by your DID, Where *DID* is the DeploymentID (Unique Id) which can be found from the Environment Details page. |
+    | Server name | Enter **postgresqlDID**, Where **DID** is the DeploymentID (Unique Id) which can be found from the Environment Details page. |
     | Data source | **None** |
     | Location | **Select the default location** |
     | Version | **Keep default setting** |
@@ -135,8 +137,8 @@ In this exercise, you'll set up Azure Database for PostgreSQL
 10. On the toolbar, select Notifications to monitor the deployment process.
 
     When the process completes, select Pin to dashboard to pin your database server to the dashboard so that you have quick access when you need it later.
-
-    ![Screenshot of the Azure portal showing the Notifications menu with the Pin to dashboard button from a recent deployment success message highlighted.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-provision-deploy-relational-database-offerings-azure/media/6-notifications-complete-postgre.png)
+    
+    ![postgresql](media/postgresql-deployment.png "postgresql")
     
 ### Task 3 : Create your Azure Database for MySQL service (Optional)
  --------------------------------------------
@@ -160,7 +162,7 @@ In this exercise you'll set up Azure Database for MySQL
 
     | Setting | Value  |
     | --- | --- |
-    | Server name | Enter **mysqlDID**, followed by your DID, Where *DID* is the DeploymentID (Unique Id) which can be found from the Environment Details page. |
+    | Server name | Enter **mysqlDID**, Where **DID** is the DeploymentID (Unique Id) which can be found from the Environment Details page. |
     | Data source | **None** |
     | Location | **Select the default location** |
     | Version | **Keep default setting** |
@@ -187,4 +189,4 @@ In this exercise you'll set up Azure Database for MySQL
 
     When the process completes, select Pin to dashboard to pin your database server to the dashboard so that you have quick access when you need it later.
 
-    ![Screenshot of the Azure portal showing the Notifications menu with the Pin to dashboard button from a recent deployment success message highlighted.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-provision-deploy-relational-database-offerings-azure/media/6-notifications-complete-mysql.png)
+    ![mysql](media/mysqlserver-deployment.png "mysql")

@@ -1,4 +1,4 @@
-# Lab 1: Use SQL to query Azure SQL Database
+# Use SQL to query Azure SQL Database
 
 Contoso has provisioned the SQL database and has imported all the inventory data into the data store. As lead developer, you've been asked to run some queries over the data.
 
@@ -9,11 +9,18 @@ In this exercise, you'll query the database to find how many products are in the
 
 You'll use the built-in Query editor in the Azure portal to connect to the database and query the data.
 
-1.  Open Edge Browser and log in to the Azure portal. When prompted, use the credentials provided within the environment Details tab of the lab guide.
+1.  Open Edge Browser and log in to the Azure portal. When prompted, use the credentials provided within the Environment Details tab of the lab guide.
 
     ![Environment details](media/environment-details.png "Environment details")
+    
+---
+**NOTE**-
+The DeploymentID (Unique Id) can be found from the Environment Details page.
 
-2.  In the portal, on the home page select **Resource groups**, and then select **DP900-DID** resource group.
+---
+
+
+2.  In the portal, on the home page select **Resource groups**, and then select **DP900-DID** resource group, Where **DID** is the DeploymentID (Unique Id) which can be found from the Environment Details page.
 
     ![Resource group](media/dp-900-rg.png "dp-900 rg")
     
