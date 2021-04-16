@@ -7,7 +7,7 @@ In this exercise, you'll upload data to these data stores. You'll run queries ag
 ### Task 1: Upload product data to Cosmos DB
 --------------------------------
 
-1.  Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com).
+1.  Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com) using the credentials provided in the Environment details page from the left side.
 
 2.  On the home page, select Azure Cosmos DB.
 
