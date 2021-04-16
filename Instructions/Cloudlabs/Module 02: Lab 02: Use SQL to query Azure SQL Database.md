@@ -59,7 +59,7 @@ Tip: Adding your client IP in this step will not account for any existing VPN co
 
     ```
 
-    ![Run basic query in SQL Database Query Editor.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/query-relational-data/media/6-run-basic-query.png)
+    ![db query](media/select-star-inventory.png "db query")
 
 2.  Replace the current SQL statement with the following statement to only show the number of bananas in stock:
 
@@ -72,7 +72,7 @@ Tip: Adding your client IP in this step will not account for any existing VPN co
 
     There should be 150 bananas.
 
-    ![Run a WHERE query in SQL Database Query Editor.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/query-relational-data/media/6-select-where-sql-databases.png)
+    ![db query](media/select-banana.png "db query")
 
 3.  Replace the SQL statement with the following statement to retrieve the inventory items in order of the quantity in stock:
 
@@ -83,9 +83,9 @@ Tip: Adding your client IP in this step will not account for any existing VPN co
 
     ```
 
-    ![Run an ORDER query in SQL Database Query Editor.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/query-relational-data/media/6-select-order-sql-databases.png)
+    ![db query](media/orderby-stock.png "db query")
 
-4.  Replace the SQL statement with the statement shown below. This statement is a query that uses the JOIN operator to combine data from the *CustomerOrder* table and the *Inventory* table. It lists the details of orders placed by customers together with the inventory information for each item ordered:
+4.  Replace the SQL statement with the statement shown below. This statement is a query that uses the JOIN operator to combine data from the **CustomerOrder** table and the **Inventory** table. It lists the details of orders placed by customers together with the inventory information for each item ordered:
 
     ```
     SELECT *
@@ -94,7 +94,7 @@ Tip: Adding your client IP in this step will not account for any existing VPN co
 
     ```
 
-    ![Run a JOIN query in SQL Database Query Editor.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/query-relational-data/media/6-select-join-sql-databases.png)
+    ![db query](media/customer-order.png "db query")
 
 5.  Change the query to find the names of all customers who have ordered oranges.
   
@@ -108,7 +108,7 @@ Tip: Adding your client IP in this step will not account for any existing VPN co
 
     This query should return two customers: John Smith and Jane Brown
 
-6.  Find out how many customers have ordered lemons. This query uses the COUNT(*) function, which returns the number of rows that match the query criteria.
+6.  Find out how many customers have ordered lemons. This query uses the ```COUNT(*)``` function, which returns the number of rows that match the query criteria.
 
     ```
     SELECT COUNT(*)
@@ -132,14 +132,15 @@ Tip: Adding your client IP in this step will not account for any existing VPN co
 
     The results of this query should show that John Smith has only ordered oranges.
 
-8.  What is the total quantity of items ordered by all customers? The *Quantity* column in the *CustomerOrder* table contains the quantity for each order. This query uses the SUM aggregate function to add the quantities together to product a grand total:
+8.  What is the total quantity of items ordered by all customers? The **Quantity** column in the **CustomerOrder** table contains the quantity for each order. This query uses the SUM aggregate function to add the quantities together to product a grand total:
 
     ```
     SELECT SUM(CustomerOrder.Quantity)
     FROM CustomerOrder
-
     ```
 
     The answer should be 29.
-
+    
+    ![db query](media/final-result.png "db query")
+    
 You've now seen how to run SQL queries against a SQL database. If you have time, try to add some more rows into both tables using INSERT statements, modify the rows using UPDATE statements, and remove rows using DELETE statements.
