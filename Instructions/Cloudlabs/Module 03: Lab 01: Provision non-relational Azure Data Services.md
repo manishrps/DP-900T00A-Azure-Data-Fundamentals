@@ -1,4 +1,4 @@
-# Lab 1: Provision non-relational Azure data services
+# Provision non-relational Azure data services
 
 In the sample scenario, you've decided to create the following data stores:
 
@@ -20,9 +20,16 @@ Note: Azure can take as little as 5 minutes or as long as 20 minutes to create t
 
 ### Step 1 : Create a Cosmos DB account
 
-1.  Open Edge Browser and log in to the Azure portal. When prompted, use the credentials provided within the environment Details tab of the lab guide.
+1.  Open Edge Browser and log in to the Azure portal. When prompted, use the credentials provided within the Environment Details tab of the lab guide.
 
     ![Environment details](media/environment-details.png "Environment details")
+
+---
+**NOTE**-
+**DID** is the DeploymentID (Unique Id) which can be found from the Environment Details page.
+
+---
+
 
 2.  From the left-hand navigation menu in the Azure portal, select Create a resource.
 
