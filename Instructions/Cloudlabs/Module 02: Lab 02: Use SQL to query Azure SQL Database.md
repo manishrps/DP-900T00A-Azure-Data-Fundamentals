@@ -15,12 +15,12 @@ You'll use the built-in Query editor in the Azure portal to connect to the datab
     
 ---
 **NOTE**-
-**DID** is the DeploymentID (Unique Id) which can be found from the Environment Details page.
+The DeploymentID (Unique Id) can be found from the Environment Details page.
 
 ---
 
 
-2.  In the portal, on the home page select **Resource groups**, and then select **DP900-DID** resource group.
+2.  In the portal, on the home page select **Resource groups**, and then select **DP900-DID** resource group, Where **DID** is the DeploymentID (Unique Id) which can be found from the Environment Details page.
 
     ![Resource group](media/dp-900-rg.png "dp-900 rg")
     
