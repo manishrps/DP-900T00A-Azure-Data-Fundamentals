@@ -221,7 +221,7 @@ In this exercise, you'll upload data to these data stores. You'll run queries ag
 
 10.  On the Connection Summary page, select Connect.
 
-   ![](media/lab4/task3/7.png)
+     ![](media/lab4/task3/7.png)
 
 11. In Azure Storage Explorer, under Storage Accounts, expand Storage{deploymentID}. Verify that folders appear for Blob Containers and File Shares.
 
