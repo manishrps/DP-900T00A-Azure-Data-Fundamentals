@@ -91,7 +91,7 @@ In this exercise, you'll upload data to these data stores. You'll run queries ag
 
 2.  On the Overview page for the account, select Data Explorer. On the Data Explorer page, expand the ProductData database, expand the ProductCatalog container, and then select Items. Verify that the Items pane contains a list of products.
 
-    ![Image of the Items page for the Cosmos DB container](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-items.png)
+    ![](media/lab4/task2/1.png)
 
 3.  Select the item with ID 316. A JSON document containing the details for product 316 should appear in the right-hand pane.
 
