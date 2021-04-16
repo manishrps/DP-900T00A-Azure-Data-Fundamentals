@@ -179,62 +179,61 @@ In this exercise, you'll upload data to these data stores. You'll run queries ag
 
 1.  In the Azure portal, in the left-hand navigation menu, select Home
 
-    ![Image showing navigation menu in the Azure portal. The user has selected Home](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-navigation-menu.png)
+    ![](media/lab4/task3/1.png)
 
-2.  On the Home page, select Storage accounts, and then select the storage account created by the setup script.
+2.  On the Home page, select Storage accounts, and then select the storage account present in the page that starts with the name **storage**.
 
 3.  On the Storage Account page, under Settings, select Shared access signature.
 
-    ![Image showing the page for the Storage Account in the Azure portal. The user has selected Shared access signature](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-storage.png)
+    ![](media/lab4/task3/2-1.png)
 
 4.  On the Shared access signature page, under Allowed services, select Blob and File. Deselect Queue and Table.
 
-    Under Allowed resource types, select Service, Container, and Object.
+     - Under Allowed resource types, select Service, Container, and Object.
 
-    Accept the default permissions, and start and expiry date/time values.
+     - Accept the default permissions, and start and expiry date/time values.
 
-    In the Allowed IP addresses box, enter the public IP address of your desktop computer.
+     - Leave Allowed protocols set to HTTPS only, and then click Generate SAS and connection string.
 
+    ![](media/lab4/task3/2-2new.png)
 
-Note: You can find the IP address of your desktop computer by visiting <https://whatismyipaddress.com/>
+5.  **Make a note of the values in the SAS token, Blob service SAS URL, and File service SAS URL fields.** Copy these values to the clipboard, and paste them into a text file, using Notepad.
 
-   Leave Allowed protocols set to HTTPS only, and then click Generate SAS and connection string.
+    ![](media/lab4/task3/3.png)
 
-   Make a note of the values in the SAS token, Blob service SAS URL, and File service SAS URL fields.
+6.  Return to your desktop computer, and start Azure Storage Explorer.
 
- Tip: Copy these values to the clipboard, and paste them into a text file, using Notepad.
+    ![](media/lab4/task3/4-1.png)
 
-   ![Image showing the Shared access signature page for the storage account](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-shared-access-signature-page.png)
-
-5.  Return to your desktop computer, and start Azure Storage Explorer.
-
-6.  In Azure Storage Explorer, expand Local & Attached, right-click Storage Accounts, and then select Connect to Azure Storage
+7.  In Azure Storage Explorer, expand Local & Attached, right-click Storage Accounts, and then select Connect to Azure Storage
 
     ![Image showing the Azure Storage Explorer. The user has selected Storage Accounts](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-local-attached.png)
+    
+    ![](media/lab4/task3/4.png)
 
-7.  In the Connect to Azure Storage dialog box, select Use a shared access signature (SAS) URI, and then select Next.
+8.  In the Connect to Azure Storage dialog box, select **Shared access signature (SAS)**, and then select Next.
 
-    ![Image showing the Connect to Azure Storage dialog box. The user has selected Use a shared access signature (SAS) URI](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-select-shared-access-signature.png)
+    ![](media/lab4/task3/5.png)
 
-8.  On the Attach with SAS URI page, in the Display name field, enter Image Data. In the URI field, provide the Blob service SAS URL that you generated earlier in the Azure portal, and then select Next. The Blob endpoint and File endpoint fields on this page are populated automatically.
+9.  On the Enter Connection Info page. In **SAS connection string OR service URL** field, provide the Blob service SAS URL that you generated earlier in the Azure portal which you have copied into a notepad, the Display name fields on this page will populate automatically and then select **Next**.
 
-    ![Image showing the Attach with SAS URI dialog box. The user has provided the Blob service SAS URL from the Azure portal](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-attach-shared-access-signature.png)
+    ![](media/lab4/task3/6.png)
 
-9.  On the Connection Summary page, select Connect
+10.  On the Connection Summary page, select Connect.
 
-    ![Image showing the Connection Summary dialog box.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-shared-access-signature-connect.png)
+   ![](media/lab4/task3/7.png)
 
-10. In Azure Storage Explorer, under Storage Accounts, expand Storage{deploymentID}. Verify that folders appear for Blob Containers and File Shares.
+11. In Azure Storage Explorer, under Storage Accounts, expand Storage{deploymentID}. Verify that folders appear for Blob Containers and File Shares.
 
-    ![Image showing Azure Storage Explorer. The Image Data account has been attached](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-image-data-account.png)
+   ![](media/lab4/task3/8new.png)
 
-11. Right-click Blob Containers, and then select Create Blob Container. Add a container named images.
+12. Right-click Blob Containers, and then select Create Blob Container. Add a container named images.
 
-    ![Image showing the images container added to the list of blob containers](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-new-blob-container.png)
+   ![](media/lab4/task3/9-1.png)
 
-12. Return to the Cloud Shell window, and move to the lab folder.
+13. Return to the Cloud Shell window, and move to the lab folder.
 
-13. Run the following command. Replace <storage account name> with the name of your Azure Storage account:
+14. Run the following command. Replace <storage account name> with the name of your Azure Storage account:
 
     Azure CLICopy
 
