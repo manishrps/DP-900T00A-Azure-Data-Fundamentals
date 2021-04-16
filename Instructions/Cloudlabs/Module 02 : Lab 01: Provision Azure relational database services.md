@@ -44,8 +44,6 @@ Over time if you realize you need additional compute power to keep up with deman
     | Resource group | **DP900-DID** |
     | Database name | **ContosoDID** |
     | Want to use SQL elastic pool? | **No** |
-    
-- Note  Where **DID** is the DeploymentID (Unique Id) which can be found from the Environment Details page.
 
     ![create sql database](media/sql-database-create.png "Creating SQl database")
 
