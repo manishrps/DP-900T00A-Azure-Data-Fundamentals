@@ -28,7 +28,7 @@ Over time if you realize you need additional compute power to keep up with deman
     
 ---
 **NOTE**-
-**DID** is the DeploymentID (Unique Id) which can be found from the Environment Details page.
+ The DeploymentID (Unique Id) can be found from the Environment Details page.
 
 ---
 
@@ -42,7 +42,7 @@ Over time if you realize you need additional compute power to keep up with deman
     | --- | --- |
     | Subscription | **Default Subscription** |
     | Resource group | **DP900-DID** |
-    | Database name | **ContosoDID** |
+    | Database name | **ContosoDID**, Where **DID** is the DeploymentID (Unique Id) which can be found from the Environment Details page. |
     | Want to use SQL elastic pool? | **No** |
 
     ![create sql database](media/sql-database-create.png "Creating SQl database")
@@ -51,7 +51,7 @@ Over time if you realize you need additional compute power to keep up with deman
 
     | Setting | Value  |
     | --- | --- |
-    | Server name | **sqlDID** |
+    | Server name | **sqlDID** ,Where **DID** is the DeploymentID (Unique Id) which can be found from the Environment Details page. |
     | Server admin login | **azureadmin** |
     | Password | **Pa55w.rd** |
     | Confirm password | **Pa55w.rd** |
@@ -111,7 +111,7 @@ In this exercise, you'll set up Azure Database for PostgreSQL
 
     | Setting | Value  |
     | --- | --- |
-    | Server name | Enter **postgresqlDID**, followed by your DID, Where *DID* is the DeploymentID (Unique Id) which can be found from the Environment Details page. |
+    | Server name | Enter **postgresqlDID**, Where **DID** is the DeploymentID (Unique Id) which can be found from the Environment Details page. |
     | Data source | **None** |
     | Location | **Select the default location** |
     | Version | **Keep default setting** |
@@ -162,7 +162,7 @@ In this exercise you'll set up Azure Database for MySQL
 
     | Setting | Value  |
     | --- | --- |
-    | Server name | Enter **mysqlDID**, followed by your DID, Where *DID* is the DeploymentID (Unique Id) which can be found from the Environment Details page. |
+    | Server name | Enter **mysqlDID**, Where **DID** is the DeploymentID (Unique Id) which can be found from the Environment Details page. |
     | Data source | **None** |
     | Location | **Select the default location** |
     | Version | **Keep default setting** |
