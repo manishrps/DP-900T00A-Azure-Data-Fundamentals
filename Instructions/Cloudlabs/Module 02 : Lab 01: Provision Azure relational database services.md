@@ -27,6 +27,12 @@ Over time if you realize you need additional compute power to keep up with deman
 1.  Open Edge Browser and log in to the Azure portal. When prompted, use the credentials provided within the environment Details tab of the lab guide.
 
     ![Environment details](media/environment-details.png "Environment details")
+    
+---
+**NOTE**-
+**DID** is the DeploymentID (Unique Id) which can be found from the Environment Details page.
+
+---
 
 2.  In the portal, select Create a resource from the upper left-hand corner. Select Databases, then select SQL Database.
 
@@ -78,8 +84,8 @@ Over time if you realize you need additional compute power to keep up with deman
 10. On the toolbar, select Notifications to monitor the deployment process.
 
     When the process completes, select Pin to dashboard to pin your database server to the dashboard so that you have quick access when you need it later.
-
-    ![Screenshot of the Azure portal showing the Notifications menu with the Pin to dashboard button from a recent deployment success message highlighted.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-provision-deploy-relational-database-offerings-azure/media/7-notifications-complete.png)
+    
+    ![Sql database](media/sqldatabase-deployment.png "Sql database")
     
 
 ### Task 2: Create your Azure Database for PostgreSQL service (Optional)
@@ -135,8 +141,8 @@ In this exercise, you'll set up Azure Database for PostgreSQL
 10. On the toolbar, select Notifications to monitor the deployment process.
 
     When the process completes, select Pin to dashboard to pin your database server to the dashboard so that you have quick access when you need it later.
-
-    ![Screenshot of the Azure portal showing the Notifications menu with the Pin to dashboard button from a recent deployment success message highlighted.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-provision-deploy-relational-database-offerings-azure/media/6-notifications-complete-postgre.png)
+    
+    ![postgresql](media/postgresql-deployment.png "postgresql")
     
 ### Task 3 : Create your Azure Database for MySQL service (Optional)
  --------------------------------------------
@@ -187,4 +193,4 @@ In this exercise you'll set up Azure Database for MySQL
 
     When the process completes, select Pin to dashboard to pin your database server to the dashboard so that you have quick access when you need it later.
 
-    ![Screenshot of the Azure portal showing the Notifications menu with the Pin to dashboard button from a recent deployment success message highlighted.](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-provision-deploy-relational-database-offerings-azure/media/6-notifications-complete-mysql.png)
+    ![mysql](media/mysqlserver-deployment.png "mysql")
