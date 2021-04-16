@@ -281,11 +281,11 @@ In this exercise, you'll upload data to these data stores. You'll run queries ag
 ### Task 5: Upload documents to Azure File storage
 --------------------------------------
 
-1.  In Azure Storage Explorer, in the left-hand pane, under Image Data (SAS), right-click File Shares, and then select Create File Share. Add a file share named documents.
+1.  In Azure Storage Explorer, in the left-hand pane, under storage{deployment-id} (SAS), right-click File Shares, and then select Create File Share. Add a file share named **documents**.
 
-    ![Image showing the documents file share added to the list of file shares](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-file-share.png)
+   ![](media/lab4/task3/10-1.png)
 
-2.  Return to the Cloud Shell window, and make sure you are in the labs folder.
+2.  Return to the azure portal and open the Cloud Shell window, and make sure you are in the labs folder. If not then enter **cd lab** command to enter into the lab folder
 
 3.  Run the following command:
 
@@ -296,7 +296,7 @@ In this exercise, you'll upload data to these data stores. You'll run queries ag
 
     This command returns the public IP address of your Cloud Shell. Make a note of this address.
 
-4.  Switch to the Azure portal and go to the page for your storage account.
+4.  Switch to the Azure portal and go to the page for your storage account starting with name **storage**.
 
 5.  Under Settings, select Shared access signature, and create another SAS token, this time for your Cloud Shell. Specify the following settings, and then click Generate SAS and connection string:
 
@@ -307,18 +307,23 @@ In this exercise, you'll upload data to these data stores. You'll run queries ag
     | Allowed reource types | Container, and Object |
     | Permissions | Accept the default permissions |
     | Start and expiry date/time | Accept the default values |
-    | Allowed IP addresses | Enter the IP address of your Cloud Shell |
+    | Allowed IP addresses | Enter the IP address that you noted in the step 3 of this task |
     | Allowed protocols | HTTPS only |
 
-    Make a note of the SAS token that is generated.
+   ![](media/lab4/task3/10.png)
+   
+6. Make a note of the **SAS token** that is generated.
 
-6.  Return to the Cloud Shell and run the following command. Replace <storage-account-name> with the name of your storage account, and replace <SAS-token> with the SAS token for your storage account that you generated in the previous step:
+   ![](media/lab4/task3/11.png)
+
+7.  Return to the Cloud Shell and run the following command. Replace <storage-account-name> with the name of your storage account, and replace <SAS-token> with the SAS token for your storage account that you generated in the previous step:
 
     ```
     azcopy copy 'docs' 'https://<storage-account-name>.file.core.windows.net/documents/productdocs<SAS-token>' --recursive
 
     ```
 
+    ![](media/lab4/task3/12.png)
     This command uploads all the files in the *docs* folder to a folder named *productdocs* in the *documents* file share. It should upload seven items; one folder and six files.
 
 ### Task 6: Download documents from Azure File storage
@@ -330,7 +335,7 @@ In this exercise, you'll upload data to these data stores. You'll run queries ag
 
 3.  Double-click the productdocs folder, and then double-click the docs sub-folder. This sub-folder contains six documents:
 
-    ![Image showing the files in the productdocs folder](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-productdocs.png)
+    ![](media/lab4/task3/13.png)
 
 4.  Select any of the files, and then select Open. The file will be downloaded and opened using an editor. If you have Microsoft Word installed on your desktop, it will start and display the file, otherwise WordPad will be used (in this case, you should see the text, but the graphics images in the file won't display correctly).
 
