@@ -181,7 +181,7 @@ In this exercise, you'll upload data to these data stores. You'll run queries ag
 
     ![](media/lab4/task3/1.png)
 
-2.  On the Home page, select Storage accounts, and then select the storage account present in the page that starts with the name **storage**.
+2.  On the Home page, select Storage accounts, and then select the storage account present in the page that starts with the name **storage**. Copy the storage account name into a notepad for later tasks.
 
 3.  On the Storage Account page, under Settings, select Shared access signature.
 
@@ -231,41 +231,48 @@ In this exercise, you'll upload data to these data stores. You'll run queries ag
 
    ![](media/lab4/task3/9-1.png)
 
-13. Return to the Cloud Shell window, and move to the lab folder.
+13. Return to the Azure portal and open Cloud Shell window and it will be your first time opening cloud shell and will be asked to enter bash or powershell,Select **bash** and then select **Show advanced settings**.
 
-14. Run the following command. Replace <storage account name> with the name of your Azure Storage account:
+   ![](media/lab4/task3/cloudshell1.png)
+   
+   ![](media/lab4/task3/cloudshell2.png)
 
-    Azure CLICopy
+14. You have to create a storage account to run the bash commands and Select Use existing under Resource Group then select DP900-deploymentID and enter unique name for storage account name and Enter unique name and then click on **Create Storage**.
 
-    ```
-    az storage blob upload-batch\
-        --account-name <storage account name>\
-        --source 'images'\
-        --pattern '*.gif'\
-        --destination 'images'
+   ![](media/lab4/task3/cloudshell3.png)
 
-    ```
+15. Run the following commands. In the second command Replace storage account name(including the <>) with the name of the storage account name you copied into notepad in the earlier steps of this task and then run the command and after the command is run you will see similar outputs as shown in image :
 
+     ```
+      git clone https://github.com/MicrosoftDocs/mslearn-explore-non-relational-data-stores-azure.git lab
+    
+       az storage blob upload-batch\
+         --account-name <storage account name>\
+         --source 'images'\
+         --pattern '*.gif'\
+         --destination 'images'
+
+     ```
+
+   ![](media/lab4/task3/queryresult1images.png)
     This command uploads all the files in the images folder to the images blob container in your storage account.
 
-```
-Note: You may see a message that starts with *No connection string, account key or sas token found*. You can ignore this message.
-```
+  >**Note**: You may see a message that starts with *No connection string, account key or sas token found*. You can ignore this message.
 
 ### Task 4: View images in Azure Blob storage
 ---------------------------------
 
 1.  Switch back to Azure Storage Explorer on your desktop computer.
 
-2.  Close the images pane, and then select the images container to open it again. The container should now contain the image blobs for your products.
+2.  Select the images container to open it again. The container should now contain the image blobs for your products. if not able to find the images,please click on refresh as shown in the image.
 
-    ![Image showing the images container, with the image blobs](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-image-blobs.png)
+   ![](media/lab4/task3/9.png)
 
 3.  Select any blob, and then select Open in the toolbar.
 
-    ![Image showing the images container. The user has selected a blob and is about to download and open it](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-open-image.png)
+   ![](media/lab4/task3/9-2.png)
 
-    The blob should be downloaded, and the contents displayed.
+4.  The blob should be downloaded, and the contents displayed.
 
     ![Image of a red bicycle](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-red-bicycle.png)
 
