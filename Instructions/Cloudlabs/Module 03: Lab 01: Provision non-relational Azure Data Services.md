@@ -26,7 +26,7 @@ Note: Azure can take as little as 5 minutes or as long as 20 minutes to create t
 
 ---
 **NOTE**-
-**DID** is the DeploymentID (Unique Id) which can be found from the Environment Details page.
+The DeploymentID (Unique Id) can be found from the Environment Details page.
 
 ---
 
@@ -45,7 +45,7 @@ Note: Azure can take as little as 5 minutes or as long as 20 minutes to create t
     | --- | --- |
     | Subscription | **Default Subscription** |
     | Resource Group | **DP900-DID** |
-    | Account Name | **cosmosdbaccountDID** |
+    | Account Name | **cosmosdbaccountDID**, Where **DID** is the DeploymentID (Unique Id) which can be found from the Environment Details page. |
     | API | **Core (SQL)** |
     | Location | **Accept the default location** |
     | Capacity mode | **Provisioned throughput** |
@@ -141,7 +141,7 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
     | --- | --- |
     | Subscription | **Default Subscription** |
     | Resource Group | **DP900-DID** |
-    | Storage account Name | **datastorageDID** |
+    | Storage account Name | **datastorageDID**, Where **DID** is the DeploymentID (Unique Id) which can be found from the Environment Details page. |
     | Performance | **Standard** |
     | Account kind | **Storage V2 (general purpose v2)** |
     | Replication | **Read-access geo-redundant storage (RA-GRS)** |
@@ -179,7 +179,7 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
 
 6.  Add a second directory named **plantB**.
 
-    Contoso has two manufacturing plants named *Plant A* and *Plant B*. Other applications will upload manufacturing data from each of these plants to the appropriate directory for later analysis.
+    Contoso has two manufacturing plants named **Plant A** and **Plant B**. Other applications will upload manufacturing data from each of these plants to the appropriate directory for later analysis.
 
 
 ### Step 3 : Create a container for Blob storage
