@@ -151,14 +151,18 @@ In this exercise you'll set up Azure Database for MySQL
 
     ![azure database for sql](media/create-azure-database-forsql.png "azure database for sql")
 
-3.  Use these values to fill out the first section of the form.
+3. You will be presented with the choice of a Single server or Flexile server. Select Create for the Single server option
+
+    ![azure database for sql](media/dp90002.png "azure database for sql")
+
+4.  Use these values to fill out the first section of the form.
 
     | Setting | Value  |
     | --- | --- |
     | Subscription | **Default Subscription** |
     | Resource group | **DP900-DID** |
 
-4.  Under Server details, use these values
+5.  Under Server details, use these values
 
     | Setting | Value  |
     | --- | --- |
@@ -169,13 +173,13 @@ In this exercise you'll set up Azure Database for MySQL
 
     ![mysql create](media/mysql-create.png "mysql create")
 
-5.  Under Compute + storage, select configure server.
+6.  Under Compute + storage, select configure server.
 
-6.  On the Pricing tier page, reduce vCore to **two cores**, set Storage between **160 GB** to **170 GB**, change Backup Retention Period to **14 days**, and then select apply.
+7.  On the Pricing tier page, reduce vCore to **two cores**, set Storage between **160 GB** to **170 GB**, change Backup Retention Period to **14 days**, and then select apply.
 
     ![configure azure database](media/configure-azure-database-mysql.png "configure azure database") 
 
-7.  Back on the Create MySQL server page, under Administrator account, use these values
+8.  Back on the Create MySQL server page, under Administrator account, use these values
 
     | Setting | Value  |
     | --- | --- |
@@ -183,9 +187,9 @@ In this exercise you'll set up Azure Database for MySQL
     | Password | **Pa55w.rd** |
     | Confirm password | **Pa55w.rd** |
 
-8.  Select Review + Create, and then select Create to create your Azure MySQL database.
+9.  Select Review + Create, and then select Create to create your Azure MySQL database.
 
-9.  On the toolbar, select Notifications to monitor the deployment process.
+10.  On the toolbar, select Notifications to monitor the deployment process.
 
     When the process completes, select Pin to dashboard to pin your database server to the dashboard so that you have quick access when you need it later.
 
