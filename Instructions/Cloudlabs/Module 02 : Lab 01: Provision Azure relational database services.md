@@ -171,7 +171,7 @@ In this exercise you'll set up Azure Database for MySQL
 
 5.  Under Compute + storage, select configure server.
 
-6.  On the Pricing tier page, reduce vCore to **two cores**, set Storage to **160 GB**, change Backup Retention Period to **14 days**, and then select apply.
+6.  On the Pricing tier page, reduce vCore to **two cores**, set Storage between **160 GB** to **170 GB**, change Backup Retention Period to **14 days**, and then select apply.
 
     ![configure azure database](media/configure-azure-database-mysql.png "configure azure database") 
 
