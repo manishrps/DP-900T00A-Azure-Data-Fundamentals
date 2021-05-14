@@ -245,6 +245,8 @@ In this exercise, you'll upload data to these data stores. You'll run queries ag
 
      ```
       git clone https://github.com/MicrosoftDocs/mslearn-explore-non-relational-data-stores-azure.git lab
+      
+      cd lab
     
        az storage blob upload-batch\
          --account-name <storage account name>\
