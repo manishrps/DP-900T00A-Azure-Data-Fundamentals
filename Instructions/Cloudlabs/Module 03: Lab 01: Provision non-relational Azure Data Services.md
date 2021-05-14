@@ -143,8 +143,7 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
     | Resource Group | **DP900-DID** |
     | Storage account Name | **datastorageDID**, Where **DID** is the DeploymentID (Unique Id) which can be found from the Environment Details page. |
     | Performance | **Standard** |
-    | Account kind | **Storage V2 (general purpose v2)** |
-    | Replication | **Read-access geo-redundant storage (RA-GRS)** |
+    | Replication | **Geo-Zone-redundant storage (GZRS)** |
     | Access tier | **Hot** |
     
 - Note  Where **DID** is the DeploymentID (Unique Id) which can be found from the Environment Details page.
