@@ -191,6 +191,6 @@ In this exercise you'll set up Azure Database for MySQL
 
 10.  On the toolbar, select Notifications to monitor the deployment process.
 
-    When the process completes, select Pin to dashboard to pin your database server to the dashboard so that you have quick access when you need it later.
+     When the process completes, select Pin to dashboard to pin your database server to the dashboard so that you have quick access when you need it later.
 
-    ![mysql](media/mysqlserver-deployment.png "mysql")
+     ![mysql](media/mysqlserver-deployment.png "mysql")
