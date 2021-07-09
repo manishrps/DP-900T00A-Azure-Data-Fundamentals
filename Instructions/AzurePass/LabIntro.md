@@ -9,7 +9,7 @@
 1. Refer the **Environment Details** tab for any other lab credentials/details.
 
 
-#### NOTES:
+### NOTES:
 
 1. Do Not Click on the **Activate Sandbox**
 
