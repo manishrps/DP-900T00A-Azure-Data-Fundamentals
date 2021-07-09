@@ -8,16 +8,14 @@
 
 1. Refer the **Environment Details** tab for any other lab credentials/details.
 
-## Do Not Click on the **Activate Sandbox**
+
+NOTES:
+
+1. Do Not Click on the **Activate Sandbox**
 
   ![image](https://user-images.githubusercontent.com/55728764/124781615-2b86ac00-df61-11eb-9798-b92867b74e82.png)
   
-
-# Perform this steps for Lab 2 and 4
-
-### Don't use this Cloud shell
-
-![image](https://user-images.githubusercontent.com/55728764/124782348-cb443a00-df61-11eb-9ba0-a2b7107a7b9e.png)
+1. For accessing cloudshell in lab 2 and 4 follow the bellow steps:
 
 1. From the portal, open the Azure Cloud Shell by clicking on the icon in the top right of the Azure Portal.
 
@@ -28,6 +26,3 @@
  1. If prompted, click **Create storage**, and wait until the Azure Cloud Shell pane is displayed. 
 
  1. Ensure **Bash** appears in the drop-down menu in the upper-left corner of the Cloud Shell pane.
-
-
-
