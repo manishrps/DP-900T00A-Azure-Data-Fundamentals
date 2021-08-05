@@ -9,6 +9,8 @@ In an Azure storage account, you store blobs in containers. A container provides
 
 You create a container in an Azure Storage account. You can do this using the Azure portal, or using the Azure CLI or Azure PowerShell from the command line.
 
+#### Using Azure portal:
+
 1.  In the Azure portal, in the left-hand navigation menu, select Home
 
     ![](media/lab4/task3/1.png)
@@ -23,3 +25,26 @@ You create a container in an Azure Storage account. You can do this using the Az
 
     ![](media/lab4/images.png)
 
+#### Using Azure CLI:
+
+1. Return to the Azure portal and open Cloud Shell window and it will be your first time opening cloud shell and will be asked to enter bash or powershell,Select **bash** and then select **Show advanced settings**.
+
+   ![](media/lab4/task3/cloudshell1.png)
+   
+   ![](media/lab4/task3/cloudshell2.png)
+
+2. You have to create a storage account to run the bash commands and Select Use existing under Resource Group then select DP900-deploymentID and enter unique name for storage account name and Enter unique name and then click on **Create Storage**.
+
+   ![](media/lab4/task3/cloudshell3.png)
+
+3. Run the following commands by replacing storage account name(including the <>) with the name of the storage account name you copied into notepad in the earlier steps of this task and then run the command and after the command is run you will see similar outputs as shown in image :
+
+     ```
+
+        az storage container create \
+          --name images-cli \
+          --account-name <storage account name> \
+          --resource-group <Resource-group> \
+          --public-access blob
+
+     ```
