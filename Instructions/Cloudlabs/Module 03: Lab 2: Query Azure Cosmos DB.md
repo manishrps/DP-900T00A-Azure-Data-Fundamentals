@@ -37,4 +37,4 @@ In this exercise, you'll see how to use the Data Explorer in the Azure portal to
     
 7. The Items page also lets you modify and delete documents. Select a document from the list to display it in the main pane. You can modify any of the fields, and select Update to save the changes. Select Delete to remove the document from the collection. The New Item command enables you to manually add a new document to the collection. You can use the Upload Item to create new documents from a file containing JSON data.
 
-    ![](media/lab4/itemmenu.png)    
+    ![](media/lab4/itemmenu1.png)    
