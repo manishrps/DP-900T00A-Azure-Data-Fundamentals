@@ -30,3 +30,11 @@ In this exercise, you'll see how to use the Data Explorer in the Azure portal to
     ```
 
     ![Image showing the list of mountain bikes returned by the query](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-mountain-bike-query.png)
+    
+6. You can save the query text if you need to repeat it in the future. The query is saved in a separate container. You can retrieve it later using the Open Query command in the toolbar.  
+
+    ![](media/lab4/openquery.png) 
+    
+7. The Items page also lets you modify and delete documents. Select a document from the list to display it in the main pane. You can modify any of the fields, and select Update to save the changes. Select Delete to remove the document from the collection. The New Item command enables you to manually add a new document to the collection. You can use the Upload Item to create new documents from a file containing JSON data.
+
+    ![](media/lab4/itemmenu.png)    
