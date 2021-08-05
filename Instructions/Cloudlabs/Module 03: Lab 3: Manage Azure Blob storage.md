@@ -17,4 +17,4 @@ You create a container in an Azure Storage account. You can do this using the Az
 
 3.  On the Storage Account page, under **Data storage**, select **Containers**. On the Containers page, select **+ Container** to create a new container.
 
-    ![](media/lab4/create-container.png.png)
+    ![](media/lab4/create-container.png)
