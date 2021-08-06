@@ -51,10 +51,17 @@ You create a container in an Azure Storage account. You can do this using the Az
           --resource-group <Resource-group> \
           --public-access blob
      ```
-
+   ![](media/lab4/cli-storagecreate.png)
+   
 #### Using Azure PowerShell:
 
-1. 
+1. In the Azure portal Cli window click on **Bash** and select **PowerShell** then click on **Confirm** to switch to powershell window as shown below.
+
+   ![](media/lab4/psselect.png)
+   ![](media/lab4/psswitch.png)   
+
+2. Now in Azure PowerShell run the following commands by replacing storage account name(including the <>) and Resource-group(including the <>) with the name of the storage account name and resource group name you copied into notepad in the earlier steps of this task and then run the command and after the command is run you will see similar outputs as shown in image :
+
      ```
         Get-AzStorageAccount `
           -ResourceGroupName "<Resource-group>" `
@@ -62,3 +69,7 @@ You create a container in an Azure Storage account. You can do this using the Az
             -Name "images-ps" `
             -Permission Blob
      ```
+     
+   ![](media/lab4/psstoragecreate.png)
+   
+   
