@@ -51,7 +51,55 @@ After you've created a container, you can upload blobs. Depending on how you wan
 5. The Advanced drop-down section provides options you can modify the default options. For example, you can specify the name of a folder in the container (the folder will be created if it doesn't exist), the type of blob, and the access tier. The blob that is created is named after the file you uploaded. Click on Upload
 
     ![](media/lab4/images-upload2.png)
-   
+
+#### List the blobs in a container:
+
+After you've uploaded files to a container, you can view them in th container folder.
+
+1. On the Storage Account page, under **Data storage**, select **Containers**. On the Containers page, select **images**.
+
+    ![](media/lab4/images-select.png)
+    
+2. The uploaded images can be shown here
+
+    ![](media/lab4/list-blobs.png)   
+
+#### Download a blob from a container:
+
+1. On the Storage Account page, under **Data storage**, select **Containers**. On the Containers page, select **images**.
+
+    ![](media/lab4/images-select.png)
+    
+2. In the list of files select any file, it will open a window with details of the file which is selected. Now click on **Download** to download the file.    
+
+    ![](media/lab4/download-blob.png)
+
+#### Delete a blob from a container
+
+Deleting a blob can reclaim the resources used in the storage container. However, if you've enabled the soft delete option for the storage account, the blob is hidden rather than removed, and you can restore it later.
+
+1. On the Storage Account page, under **Data management**, select **Data protection**. Now select check box **Enable soft delete for blobs** to enable soft delete on blobs
+
+    ![](media/lab4/soft-delete.png)
+
+2. Now on the Storage Account page, under **Data storage**, select **Containers**. On the Containers page, select **images**.
+
+    ![](media/lab4/images-select.png)
+    
+3. In the list of files select any file, it will open a window with details of the file which is selected. Now click on **Delete** to delete the file.    
+
+    ![](media/lab4/delete-blob.png)
+
+4. Now click on **Show deleted blobs** to view the deleted files.
+
+    ![](media/lab4/show-deleted-blobs.png)
+    
+#### Delete an Azure Storage container:
+
+1. On the Storage Account page, under **Data storage**, select **Containers**. On the Containers page, select **images** then click on **Delete**.
+
+    ![](media/lab4/delete-container.png)
+    
 ### Task 2: Using Azure CLI
 --------------------------------   
 
