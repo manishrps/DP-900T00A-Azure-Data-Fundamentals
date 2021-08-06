@@ -26,5 +26,24 @@ Microsoft provides two graphical tools you can use to create and manage file sha
 
     ![](media/lab4/create-fs2.png)
     
-5. After you've created a share, you can use the Azure portal to add directories to the share, upload files to the share, and delete the share. The Connect command generates a PowerShell script that you can run to attach to the share from your local computer. You can then use the share as though it was a local disk drive.
+5. After you've created a share, Click on **reports**. you can use the Azure portal to add directories to the share, upload files to the share, and delete the share. 
+
+    ![](media/lab4/fs-menu.png)
+
+6. The Connect command generates a PowerShell script that you can run to attach to the share from your local computer. You can then use the share as though it was a local disk drive. Click on **Connect** and copy the **PowerShell** script
+
+    ![](media/lab4/connect-fs.png)
+    ![](media/lab4/connect-fs2.png)    
+    
+7. Now in LabVM go to start menu and type **Powershell ISE** in search bar, then open it.
+
+8. Go to View and click on show script pane to open editor panel. then paste the connection string you copied and click on execute button.
+
+    ![](media/lab4/sh-pane.png) 
+    ![](media/lab4/ise-1.png) 
+    ![](media/lab4/ise-2.png)     
+    
+9. Now open windows explorer and verify mounted drive.
+
+    ![](media/lab4/mount-fs.png)   
 
