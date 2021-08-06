@@ -1,15 +1,15 @@
 # Manage Azure Blob storage
 
-In this exercise, you'll learn how to create and manage blobs, and the containers that hold them.
+In this exercise, you'll learn how to create and manage blobs, and the containers that hold them. You can do this using the Azure portal, or using the Azure CLI or Azure PowerShell from the command line.
 
 
-### Task 1: Create an Azure Storage container
+### Task 1: Using Azure portal
 --------------------------------
+#### Create an Azure Storage container:
+
 In an Azure storage account, you store blobs in containers. A container provides a convenient way of grouping related blobs together, and you can organize blobs in a hierarchy of folders inside a container, similar to files in a file system on disk.
 
-You create a container in an Azure Storage account. You can do this using the Azure portal, or using the Azure CLI or Azure PowerShell from the command line.
-
-#### Using Azure portal:
+You create a container in an Azure Storage account. 
 
 1.  In the Azure portal, in the left-hand navigation menu, select Home
 
@@ -25,7 +25,29 @@ You create a container in an Azure Storage account. You can do this using the Az
 
     ![](media/lab4/images.png)
 
-#### Using Azure CLI:
+#### Upload a blob to Azure Storage:
+
+After you've created a container, you can upload blobs. Depending on how you want to organize your blobs, you can also create folders in the container.
+
+1. In the Azure portal, in the left-hand navigation menu, select Home
+
+    ![](media/lab4/task3/1.png)
+
+2. On the Home page, select Storage accounts, and then select the storage account present in the page that starts with the name **storage**.
+
+3. On the Storage Account page, under **Data storage**, select **Containers**. On the Containers page, select **images**.
+
+    ![](media/lab4/images-select.png)
+    
+4. Now click on **Upload**, it will open file upload window, select file icon then browse to desktop and go to **lab** folder and it's subfolder **images** then select any file and upload it.
+
+5. 
+
+   
+### Task 2: Using Azure CLI
+--------------------------------   
+
+#### Create an Azure Storage container:
 
 1. In the Azure portal, in the left-hand navigation menu select Home and scroll down for Navigate menu there select Resource Group. And copy the name of the Resource Group into a notepad for later tasks.
 
@@ -52,8 +74,13 @@ You create a container in an Azure Storage account. You can do this using the Az
           --public-access blob
      ```
    ![](media/lab4/cli-storagecreate.png)
-   
-#### Using Azure PowerShell:
+
+#### Upload a blob to Azure Storage:
+
+### Task 3: Using Azure PowerShell
+--------------------------------   
+
+#### Create an Azure Storage container:
 
 1. In the Azure portal Cli window click on **Bash** and select **PowerShell** then click on **Confirm** to switch to powershell window as shown below.
 
@@ -72,4 +99,4 @@ You create a container in an Azure Storage account. You can do this using the Az
      
    ![](media/lab4/psstoragecreate.png)
    
-   
+#### Upload a blob to Azure Storage:   
