@@ -51,3 +51,14 @@ You create a container in an Azure Storage account. You can do this using the Az
           --resource-group <Resource-group> \
           --public-access blob
      ```
+
+#### Using Azure PowerShell:
+
+1. 
+     ```
+        Get-AzStorageAccount `
+          -ResourceGroupName "<Resource-group>" `
+          -Name "<storage account name>" | New-AzStorageContainer `
+            -Name "images-ps" `
+            -Permission Blob
+     ```
