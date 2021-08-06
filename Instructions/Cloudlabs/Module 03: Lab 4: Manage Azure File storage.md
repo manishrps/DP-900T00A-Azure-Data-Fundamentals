@@ -10,13 +10,18 @@ Microsoft provides two graphical tools you can use to create and manage file sha
 
 #### Use the Azure portal:
 
-1.  In the Azure portal, in the left-hand navigation menu, select Home
+1. In the Azure portal, in the left-hand navigation menu, select Home
 
     ![](media/lab4/task3/1.png)
 
-2.  On the Home page, select Storage accounts, and then select the storage account present in the page that starts with the name **storage**. Copy the storage account name into a notepad for later tasks.
+2. On the Home page, select Storage accounts, and then select the storage account present in the page that starts with the name **storage**. Copy the storage account name into a notepad for later tasks.
 
     ![](media/lab4/select-storage.png)
 
-3.  On the Storage Account page, under **Data storage**, select **File Shares**. On the File shares page, select **+ File share** to create a new file share.
+3. On the Storage Account page, under **Data storage**, select **File Shares**. On the File shares page, select **+ File share** to create a new file share.
 
+    ![](media/lab4/create-fs.png)
+    
+4. On the New file share window give **Name** as **reports** then click on **create**.
+
+    ![](media/lab4/create-fs2.png)
