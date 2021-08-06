@@ -105,7 +105,7 @@ Deleting a blob can reclaim the resources used in the storage container. However
 
 #### Create an Azure Storage container:
 
-1. In the Azure portal, in the left-hand navigation menu select Home and scroll down for Navigate menu there select Resource Group. And copy the name of the Resource Group into a notepad for later tasks.
+1. In the Azure portal, on the left-hand navigation menu select Home and scroll down for Navigate menu and select **Resource Group**. Copy the name of the Resource Group into a notepad for later tasks.
 
    ![](media/lab4/rg.png)
    ![](media/lab4/rg-name.png)   
@@ -116,11 +116,11 @@ Deleting a blob can reclaim the resources used in the storage container. However
    
    ![](media/lab4/task3/cloudshell2.png)
 
-2. You have to create a storage account to run the bash commands and Select Use existing under Resource Group then select DP900-deploymentID and enter unique name for storage account name and Enter unique name and then click on **Create Storage**.
+3. You have to create a storage account to run the bash commands and Select Use existing under Resource Group then select DP900-deploymentID and enter unique name for storage account name and Enter unique name and then click on **Create Storage**.
 
    ![](media/lab4/task3/cloudshell3.png)
 
-3. Run the following commands by replacing storage account name(including the <>) and Resource-group(including the <>) with the name of the storage account name and resource group name you copied into notepad in the earlier steps of this task and then run the command and after the command is run you will see similar outputs as shown in image :
+4. Run the following commands by replacing storage account name(including the <>) and Resource-group(including the <>) with the name of the storage account name and resource group name you copied into notepad in the earlier steps and then run the command and after the command is run you will see similar outputs as shown in image :
 
      ```
         az storage container create \
@@ -133,6 +133,75 @@ Deleting a blob can reclaim the resources used in the storage container. However
 
 #### Upload a blob to Azure Storage:
 
+1. After you've created a container, you can upload blobs by running the following commands. In the second command Replace storage account name(including the <>) with the name of the storage account name you copied into notepad in the earlier steps and then run the command and after the command is run you will see similar outputs as shown in image :
+
+     ```
+        git clone https://github.com/MicrosoftDocs/mslearn-explore-non-relational-data-stores-azure.git lab
+
+        cd lab
+
+        az storage blob upload \
+          --container-name images-cli \
+          --account-name <storage account name>  \
+          --file "/home/odl_user/lab/images/racer_black_large.gif" \
+          --name "bikes\racer_black"
+     ```
+   ![](media/lab4/cli-single-upload.png)
+
+2. To upload a bulk files at a time use the following command. Replace storage account name(including the <>) with the name of the storage account name you copied into notepad in the earlier steps and then run the command and after the command is run you will see similar outputs as shown in image :
+
+     ```
+      az storage blob upload-batch\
+        --account-name <storage account name>\
+        --source '/home/odl_user/lab/images/'\
+        --pattern '*.gif'\
+        --destination 'images-cli'
+     ```
+
+   ![](media/lab4/cli-bulk-upload.png)
+   
+#### List the blobs in a container:
+
+1. After you've uploaded blobs to a container, you can view the blobs in a container with the following command. Replace storage account name(including the <>) with the name of the storage account name you copied into notepad in the earlier steps
+
+     ```
+        az storage blob list \
+          --account-name <storage account name> \
+          --container-name "images-cli"
+     ```
+#### Download a blob from a container:
+1. After you've uploaded blobs to a container, you can download the blobs in a container with the following command. Replace storage account name(including the <>) with the name of the storage account name you copied into notepad in the earlier steps
+
+     ```
+        az storage blob download \
+          --container-name images-cli \
+          --account-name <storage account name> \
+          --file "racer_black_large.gif" \
+          --name "bikes\racer_green"
+     ```  
+   ![](media/lab4/cli-download.png)
+
+#### Delete a blob from a container
+
+1. After you've downloaded blobs from a container, you can delete the blobs from a container with the following command. Replace storage account name(including the <>) with the name of the storage account name you copied into notepad in the earlier steps
+
+     ```  
+        az storage blob delete \
+          --account-name <storage account name> \
+          --container-name "images-cli" \
+          --name "bikes\racer_green"	 
+     ``` 
+
+#### Delete an Azure Storage container:
+
+1. you can delete the container with the following command. Replace storage account name(including the <>) with the name of the storage account name you copied into notepad in the earlier steps
+
+     ```   
+        az storage container delete \
+          --account-name <storage account name> \
+          --name "images-cli"	 
+     ```  
+
 ### Task 3: Using Azure PowerShell
 --------------------------------   
 
@@ -143,7 +212,7 @@ Deleting a blob can reclaim the resources used in the storage container. However
    ![](media/lab4/psselect.png)
    ![](media/lab4/psswitch.png)   
 
-2. Now in Azure PowerShell run the following commands by replacing storage account name(including the <>) and Resource-group(including the <>) with the name of the storage account name and resource group name you copied into notepad in the earlier steps of this task and then run the command and after the command is run you will see similar outputs as shown in image :
+2. Now in Azure PowerShell run the following commands by replacing storage account name(including the <>) and Resource-group(including the <>) with the name of the storage account name and resource group name you copied into notepad in the earlier steps and then run the command and after the command is run you will see similar outputs as shown in image :
 
      ```
         Get-AzStorageAccount `
@@ -156,3 +225,7 @@ Deleting a blob can reclaim the resources used in the storage container. However
    ![](media/lab4/psstoragecreate.png)
    
 #### Upload a blob to Azure Storage:   
+#### List the blobs in a container:
+#### Download a blob from a container:
+#### Delete a blob from a container
+#### Delete an Azure Storage container:
