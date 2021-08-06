@@ -17,6 +17,8 @@ You create a container in an Azure Storage account.
 
 2.  On the Home page, select Storage accounts, and then select the storage account present in the page that starts with the name **storage**. Copy the storage account name into a notepad for later tasks.
 
+    ![](media/lab4/select-storage.png)
+
 3.  On the Storage Account page, under **Data storage**, select **Containers**. On the Containers page, select **+ Container** to create a new container.
 
     ![](media/lab4/create-container.png)
@@ -35,14 +37,20 @@ After you've created a container, you can upload blobs. Depending on how you wan
 
 2. On the Home page, select Storage accounts, and then select the storage account present in the page that starts with the name **storage**.
 
+    ![](media/lab4/select-storage.png)
+
 3. On the Storage Account page, under **Data storage**, select **Containers**. On the Containers page, select **images**.
 
     ![](media/lab4/images-select.png)
     
-4. Now click on **Upload**, it will open file upload window, select file icon then browse to desktop and go to **lab** folder and it's subfolder **images** then select any file and upload it.
+4. Now click on **Upload**, it will open file upload window, select file icon then browse to desktop and go to **lab** folder and it's subfolder **images** then select a file and upload it.
 
-5. 
+    ![](media/lab4/images-upload.png)   
+    ![](media/lab4/images-upload3.png)     
 
+5. The Advanced drop-down section provides options you can modify the default options. For example, you can specify the name of a folder in the container (the folder will be created if it doesn't exist), the type of blob, and the access tier. The blob that is created is named after the file you uploaded. Click on Upload
+
+    ![](media/lab4/images-upload2.png)
    
 ### Task 2: Using Azure CLI
 --------------------------------   
