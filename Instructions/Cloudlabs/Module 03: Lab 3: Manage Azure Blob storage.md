@@ -42,14 +42,12 @@ You create a container in an Azure Storage account. You can do this using the Az
 
    ![](media/lab4/task3/cloudshell3.png)
 
-3. Run the following commands by replacing storage account name(including the <>) with the name of the storage account name you copied into notepad in the earlier steps of this task and then run the command and after the command is run you will see similar outputs as shown in image :
+3. Run the following commands by replacing storage account name(including the <>) and Resource-group(including the <>) with the name of the storage account name and resource group name you copied into notepad in the earlier steps of this task and then run the command and after the command is run you will see similar outputs as shown in image :
 
      ```
-
         az storage container create \
           --name images-cli \
           --account-name <storage account name> \
           --resource-group <Resource-group> \
           --public-access blob
-
      ```
