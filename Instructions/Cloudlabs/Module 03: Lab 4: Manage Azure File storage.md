@@ -33,6 +33,7 @@ Microsoft provides two graphical tools you can use to create and manage file sha
 6. The Connect command generates a PowerShell script that you can run to attach to the share from your local computer. You can then use the share as though it was a local disk drive. Click on **Connect** and copy the **PowerShell** script
 
     ![](media/lab4/connect-fs.png)
+    
     ![](media/lab4/connect-fs2.png)    
     
 7. Now in LabVM go to start menu and type **Powershell ISE** in search bar, then open it.
