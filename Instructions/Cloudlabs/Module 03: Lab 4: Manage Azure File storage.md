@@ -34,7 +34,7 @@ Microsoft provides two graphical tools you can use to create and manage file sha
 
     ![](media/lab4/connect-fs.png)
     
-    ![](media/lab4/connect-fs2.png)    
+    ![](media/lab4/connect-fs1.png)    
     
 7. Now in LabVM go to start menu and type **Powershell ISE** in search bar, then open it.
 
