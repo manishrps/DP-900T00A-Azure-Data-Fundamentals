@@ -25,3 +25,6 @@ Microsoft provides two graphical tools you can use to create and manage file sha
 4. On the New file share window give **Name** as **reports** then click on **create**.
 
     ![](media/lab4/create-fs2.png)
+    
+5. After you've created a share, you can use the Azure portal to add directories to the share, upload files to the share, and delete the share. The Connect command generates a PowerShell script that you can run to attach to the share from your local computer. You can then use the share as though it was a local disk drive.
+
