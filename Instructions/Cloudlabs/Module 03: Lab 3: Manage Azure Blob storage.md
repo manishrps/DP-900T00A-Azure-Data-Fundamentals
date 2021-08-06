@@ -27,7 +27,12 @@ You create a container in an Azure Storage account. You can do this using the Az
 
 #### Using Azure CLI:
 
-1. Return to the Azure portal and open Cloud Shell window and it will be your first time opening cloud shell and will be asked to enter bash or powershell,Select **bash** and then select **Show advanced settings**.
+1. In the Azure portal, in the left-hand navigation menu select Home and scroll down for Navigate menu there select Resource Group. And copy the name of the Resource Group into a notepad for later tasks.
+
+   ![](media/lab4/rg.png)
+   ![](media/lab4/rg-name.png)   
+
+2. open Cloud Shell window and it will be your first time opening cloud shell and will be asked to enter bash or powershell,Select **bash** and then select **Show advanced settings**.
 
    ![](media/lab4/task3/cloudshell1.png)
    
