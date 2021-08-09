@@ -44,7 +44,7 @@ Microsoft provides two graphical tools you can use to create and manage file sha
     ![](media/lab4/ise-1.png) 
     ![](media/lab4/ise-2.png)     
     
-9. Now open windows explorer and verify mounted drive.
+9. Now open windows explorer and verify mounted drive. You can upload and download files to the share using this mounted drive.
 
     ![](media/lab4/mount-fs.png)   
 
@@ -157,17 +157,18 @@ Azure Storage Explorer is a utility that enables you to manage Azure Storage acc
     ```
     azcopy copy "https://<storage-account-name>.file.core.windows.net/documents/productdocs<SAS-token>" "localfolder" --recursive
 
-    ```    
-    
+    ```        
     
 #### Using Storage Explorer
 ------------------------------------------
 
 1.  Return to Azure Storage Explorer on your desktop computer.
 
+2.  You can upload files to Documents folder using using button in the menu.
+    
+    ![](media/lab4/upload-se.png)    
+    
 2.  Close the documents pane, and the select the documents file share to open it again. The productdocs folder should be listed in the right-hand pane.
-
-3.  You can upload files to     
     
 3.  Double-click the productdocs folder, and then double-click the docs sub-folder. This sub-folder contains six documents:
 
