@@ -165,13 +165,15 @@ Azure Storage Explorer is a utility that enables you to manage Azure Storage acc
     
     ![](media/lab4/upload-se.png)    
     
-2.  Close the documents pane, and the select the documents file share to open it again. The productdocs folder should be listed in the right-hand pane.
+    **Note:** On the Desktop there is folder with name **lab**, you this folder to upload files to Azure share.
     
-3.  Double-click the productdocs folder, and then double-click the docs sub-folder. This sub-folder contains six documents:
+3.  Close the documents pane, and the select the documents file share to open it again. The productdocs folder should be listed in the right-hand pane.
+    
+4.  Double-click the productdocs folder, and then double-click the docs sub-folder. This sub-folder contains six documents:
 
     ![](media/lab4/task3/13.png)
 
-4.  Select any of the files, and then select Open. The file will be downloaded and opened using an editor. If you have Microsoft Word installed on your desktop, it will start and display the file, otherwise WordPad will be used (in this case, you should see the text, but the graphics images in the file won't display correctly).
+5.  Select any of the files, and then select Open. The file will be downloaded and opened using an editor. If you have Microsoft Word installed on your desktop, it will start and display the file, otherwise WordPad will be used (in this case, you should see the text, but the graphics images in the file won't display correctly).
 
     The example below shows the *Front Reflector Bracket and Reflector Assembly 3.doc* file.
 
