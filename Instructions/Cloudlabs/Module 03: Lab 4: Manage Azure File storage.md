@@ -164,7 +164,7 @@ Azure Storage Explorer is a utility that enables you to manage Azure Storage acc
 
 1.  Return to Azure Storage Explorer on your desktop computer.
 
-2.  You can upload files to Documents folder using using button in the menu.
+2.  You can upload files to Documents folder using Upload button in the menu.
     
     ![](media/lab4/upload-se.png)    
     
