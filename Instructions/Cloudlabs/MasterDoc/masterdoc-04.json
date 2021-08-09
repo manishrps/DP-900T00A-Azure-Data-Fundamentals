@@ -13,15 +13,15 @@
       },
       {
         "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-900T00A-Azure-Data-Fundamentals/prod/Instructions/Cloudlabs/Module%2003%3A%20Lab%202%3A%20Query%20Azure%20Cosmos%20DB.md",
-        "Order": 2
+        "Order": 3
       },
       {
         "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-900T00A-Azure-Data-Fundamentals/prod/Instructions/Cloudlabs/Module%2003%3A%20Lab%203%3A%20Manage%20Azure%20Blob%20storage.md",
-        "Order": 2
+        "Order": 4
       },
       {
         "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/DP-900T00A-Azure-Data-Fundamentals/prod/Instructions/Cloudlabs/Module%2003%3A%20Lab%204%3A%20Manage%20Azure%20File%20storage.md",
-        "Order": 2
+        "Order": 5
       }
     ]
   }
