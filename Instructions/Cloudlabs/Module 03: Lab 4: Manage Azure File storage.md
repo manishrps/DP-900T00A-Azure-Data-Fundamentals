@@ -58,45 +58,35 @@ Azure Storage Explorer is a utility that enables you to manage Azure Storage acc
 
 2.  On the Home page, select Storage accounts, and then select the storage account present in the page that starts with the name **storage**. Copy the storage account name into a notepad for later tasks.
 
-3.  On the Storage Account page, under **Security + networking**, select **Shared access signature**.
+3.  On the Storage Account page, under **Security + networking**, select **Access Keys**.
 
     ![](media/lab4/sas.png)
 
-4.  On the Shared access signature page, under Allowed services, select Blob and File. Deselect Queue and Table.
+4.  On the Access Keys page, Click on **show keys** and copy and paste **Storage account name** and **key** to notepad.
 
-     - Under Allowed resource types, select Service, Container, and Object.
+    ![](media/lab4/ac1.png)
 
-     - Accept the default permissions, and start and expiry date/time values.
-
-     - Leave Allowed protocols set to HTTPS only, and then click Generate SAS and connection string.
-
-    ![](media/lab4/task3/2-2new.png)
-
-5.  **Make a note of the values in the SAS token, Blob service SAS URL, and File service SAS URL fields.** Copy these values to the clipboard, and paste them into a text file, using Notepad.
-
-    ![](media/lab4/task3/3.png)
-
-6.  Return to your desktop computer, and start Azure Storage Explorer.
+5.  Return to your desktop computer, and start Azure Storage Explorer.
 
     ![](media/lab4/task3/4-1.png)
 
-7.  In Azure Storage Explorer, expand Local & Attached, right-click Storage Accounts, and then select **Azure Storage**, In the popup window select **Storage account or service**
+6.  In Azure Storage Explorer, expand Local & Attached, right-click Storage Accounts, and then select **Azure Storage**, In the popup window select **Storage account or service**
 
     ![Image showing the Azure Storage Explorer. The user has selected Storage Accounts](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-local-attached.png)
     
     ![](media/lab4/se2.png)
 
-8.  In the Connect to Azure Storage dialog box, select **Shared access signature (SAS)**, and then select Next.
+8.  In the Connect to Azure Storage dialog box, select **Account name and key**, and then select Next.
 
-    ![](media/lab4/se3.png)
+    ![](media/lab4/se4-1.png)
 
-9.  On the Enter Connection Info page. In **SAS connection string OR service URL** field, provide the Blob service SAS URL that you generated earlier in the Azure portal which you have copied into a notepad, the Display name fields on this page will populate automatically and then select **Next**.
+9.  On the Enter Connection Info page. In **Display name** and **Account name** fields, provide the **storage account name** and in **Account key** provide the key value which you have copied into a notepad, then select **Next**.
 
-    ![](media/lab4/task3/6.png)
+    ![](media/lab4/se5.png)
 
 10.  On the Connection Summary page, select Connect.
 
-     ![](media/lab4/task3/7.png)
+     ![](media/lab4/se6.png)
 
 11. In Azure Storage Explorer, under Storage Accounts, expand Storage{deploymentID}. Verify that folders appear for Blob Containers and File Shares.
 
@@ -124,7 +114,7 @@ Azure Storage Explorer is a utility that enables you to manage Azure Storage acc
 
 3.  Switch to the Azure portal and go to the page for your storage account starting with name **storage**.
 
-4.  Under Settings, select Shared access signature, and create another SAS token, this time for your Cloud Shell. Specify the following settings, and then click Generate SAS and connection string:
+4.  Under **Security + networking**, select **Shared access signature**, and create another SAS token, this time for your Cloud Shell. Specify the following settings, and then click Generate SAS and connection string:
 
     TABLE 2
     | Setting | Value |
@@ -133,7 +123,7 @@ Azure Storage Explorer is a utility that enables you to manage Azure Storage acc
     | Allowed reource types | Container, and Object |
     | Permissions | Accept the default permissions |
     | Start and expiry date/time | Accept the default values |
-    | Allowed IP addresses | Enter the IP address that you noted in the step 3 of this task |
+    | Allowed IP addresses | Enter the IP address that you noted in the step 2 of this task |
     | Allowed protocols | HTTPS only |
 
    ![](media/lab4/task3/10.png)
@@ -155,9 +145,16 @@ Azure Storage Explorer is a utility that enables you to manage Azure Storage acc
 7. To Download files from Azure file share run the following command. Replace <storage-account-name> with the name of your storage account, and replace <SAS-token> with the SAS token for your storage account that you generated in the previous step:
 
     ```
-    azcopy copy "https://<storage-account-name>.file.core.windows.net/documents/productdocs<SAS-token>" "localfolder" --recursive
+    azcopy copy 'https://<storage-account-name>.file.core.windows.net/documents/productdocs<SAS-token>' 'localfolder' --recursive
 
     ```        
+8. To verify run below command.
+    
+    ```
+    cd localfolder/productdocs/docs
+    
+    dir
+    ``` 
     
 #### Using Storage Explorer
 ------------------------------------------
