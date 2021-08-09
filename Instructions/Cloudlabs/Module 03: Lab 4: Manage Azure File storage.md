@@ -8,7 +8,7 @@ In this exercise, you'll learn how to create and manage file shares, and upload 
 
 Microsoft provides two graphical tools you can use to create and manage file shares in Azure Storage: the Azure portal, and Azure Storage Explorer.
 
-#### Use the Azure portal:
+#### Using the Azure portal:
 
 1. In the Azure portal, in the left-hand navigation menu, select Home
 
@@ -48,8 +48,7 @@ Microsoft provides two graphical tools you can use to create and manage file sha
 
     ![](media/lab4/mount-fs.png)   
 
-### Task 2: Use Azure Storage Explorer
---------------------------------------
+#### Using Azure Storage Explorer
 
 Azure Storage Explorer is a utility that enables you to manage Azure Storage accounts from your desktop computer.  You can use Storage Explorer to create blob containers and file shares, as well as upload and download files.
 
@@ -104,3 +103,78 @@ Azure Storage Explorer is a utility that enables you to manage Azure Storage acc
    ![](media/lab4/task3/8new.png)
 
 12. Right-click File Shares, and then select Create File Share. Add a file share named documents.
+
+   ![](media/lab4/task3/10-1.png)
+
+### Task 2: Upload and download files
+-------------------------------------
+
+#### Using Azure cli
+
+1.  Return to the azure portal and open the Cloud Shell window, and make sure you are in the labs folder. If not then enter **cd lab** command to enter into the lab folder
+
+2.  Run the following command:
+
+    ```
+    bash findip.sh
+
+    ```
+
+    This command returns the public IP address of your Cloud Shell. Make a note of this address.
+
+3.  Switch to the Azure portal and go to the page for your storage account starting with name **storage**.
+
+4.  Under Settings, select Shared access signature, and create another SAS token, this time for your Cloud Shell. Specify the following settings, and then click Generate SAS and connection string:
+
+    TABLE 2
+    | Setting | Value |
+    | --- | --- |
+    | Allowed services | File |
+    | Allowed reource types | Container, and Object |
+    | Permissions | Accept the default permissions |
+    | Start and expiry date/time | Accept the default values |
+    | Allowed IP addresses | Enter the IP address that you noted in the step 3 of this task |
+    | Allowed protocols | HTTPS only |
+
+   ![](media/lab4/task3/10.png)
+   
+5. Make a note of the **SAS token** that is generated.
+
+   ![](media/lab4/task3/11.png)
+
+6.  Return to the Cloud Shell and run the following command. Replace <storage-account-name> with the name of your storage account, and replace <SAS-token> with the SAS token for your storage account that you generated in the previous step:
+
+    ```
+    azcopy copy 'docs' 'https://<storage-account-name>.file.core.windows.net/documents/productdocs<SAS-token>' --recursive
+
+    ```
+
+    ![](media/lab4/task3/12.png)
+    This command uploads all the files in the *docs* folder to a folder named *productdocs* in the *documents* file share. It should upload seven items; one folder and six files.
+
+7. To Download files from Azure file share run the following command. Replace <storage-account-name> with the name of your storage account, and replace <SAS-token> with the SAS token for your storage account that you generated in the previous step:
+
+    ```
+    azcopy copy "https://<storage-account-name>.file.core.windows.net/documents/productdocs<SAS-token>" "localfolder" --recursive
+
+    ```    
+    
+    
+#### Using Storage Explorer
+------------------------------------------
+
+1.  Return to Azure Storage Explorer on your desktop computer.
+
+2.  Close the documents pane, and the select the documents file share to open it again. The productdocs folder should be listed in the right-hand pane.
+
+3.  You can upload files to     
+    
+3.  Double-click the productdocs folder, and then double-click the docs sub-folder. This sub-folder contains six documents:
+
+    ![](media/lab4/task3/13.png)
+
+4.  Select any of the files, and then select Open. The file will be downloaded and opened using an editor. If you have Microsoft Word installed on your desktop, it will start and display the file, otherwise WordPad will be used (in this case, you should see the text, but the graphics images in the file won't display correctly).
+
+    The example below shows the *Front Reflector Bracket and Reflector Assembly 3.doc* file.
+
+    ![Image showing the Front Reflector Bracket and Reflector Assembly 3.doc file](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-word-document.png)
