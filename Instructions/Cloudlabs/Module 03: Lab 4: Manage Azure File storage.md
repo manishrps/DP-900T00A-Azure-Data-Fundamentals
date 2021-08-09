@@ -48,3 +48,59 @@ Microsoft provides two graphical tools you can use to create and manage file sha
 
     ![](media/lab4/mount-fs.png)   
 
+### Task 2: Use Azure Storage Explorer
+--------------------------------------
+
+Azure Storage Explorer is a utility that enables you to manage Azure Storage accounts from your desktop computer.  You can use Storage Explorer to create blob containers and file shares, as well as upload and download files.
+
+1.  In the Azure portal, in the left-hand navigation menu, select Home
+
+    ![](media/lab4/task3/1.png)
+
+2.  On the Home page, select Storage accounts, and then select the storage account present in the page that starts with the name **storage**. Copy the storage account name into a notepad for later tasks.
+
+3.  On the Storage Account page, under **Security + networking**, select **Shared access signature**.
+
+    ![](media/lab4/sas.png)
+
+4.  On the Shared access signature page, under Allowed services, select Blob and File. Deselect Queue and Table.
+
+     - Under Allowed resource types, select Service, Container, and Object.
+
+     - Accept the default permissions, and start and expiry date/time values.
+
+     - Leave Allowed protocols set to HTTPS only, and then click Generate SAS and connection string.
+
+    ![](media/lab4/task3/2-2new.png)
+
+5.  **Make a note of the values in the SAS token, Blob service SAS URL, and File service SAS URL fields.** Copy these values to the clipboard, and paste them into a text file, using Notepad.
+
+    ![](media/lab4/task3/3.png)
+
+6.  Return to your desktop computer, and start Azure Storage Explorer.
+
+    ![](media/lab4/task3/4-1.png)
+
+7.  In Azure Storage Explorer, expand Local & Attached, right-click Storage Accounts, and then select **Azure Storage**, In the popup window select **Storage account or service**
+
+    ![Image showing the Azure Storage Explorer. The user has selected Storage Accounts](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-local-attached.png)
+    
+    ![](media/lab4/se2.png)
+
+8.  In the Connect to Azure Storage dialog box, select **Shared access signature (SAS)**, and then select Next.
+
+    ![](media/lab4/se3.png)
+
+9.  On the Enter Connection Info page. In **SAS connection string OR service URL** field, provide the Blob service SAS URL that you generated earlier in the Azure portal which you have copied into a notepad, the Display name fields on this page will populate automatically and then select **Next**.
+
+    ![](media/lab4/task3/6.png)
+
+10.  On the Connection Summary page, select Connect.
+
+     ![](media/lab4/task3/7.png)
+
+11. In Azure Storage Explorer, under Storage Accounts, expand Storage{deploymentID}. Verify that folders appear for Blob Containers and File Shares.
+
+   ![](media/lab4/task3/8new.png)
+
+12. Right-click File Shares, and then select Create File Share. Add a file share named documents.
