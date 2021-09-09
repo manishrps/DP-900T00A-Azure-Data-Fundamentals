@@ -144,7 +144,7 @@ Deleting a blob can reclaim the resources used in the storage container. However
           --container-name images-cli \
           --account-name <storage account name>  \
           --file "/home/odl_user/lab/images/racer_black_large.gif" \
-          --name "bikes\racer_black"
+          --name "bikes\racer_green"
      ```
    ![](media/lab4/cli-single-upload.png)
 
