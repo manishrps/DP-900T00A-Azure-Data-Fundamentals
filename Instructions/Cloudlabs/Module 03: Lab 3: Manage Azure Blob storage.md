@@ -116,7 +116,7 @@ Deleting a blob can reclaim the resources used in the storage container. However
    
    ![](media/lab4/task3/cloudshell2.png)
 
-3. You have to create a storage account to run the bash commands and Select Use existing under Resource Group then select DP900-deploymentID and enter unique name for storage account name and Enter unique name and then click on **Create Storage**.
+3. You have to create a storage account to run the bash commands and Select Use existing under Resource Group then select DP900-deploymentID and enter unique name for storage account name and Enter unique name for file share and then click on **Create Storage**.
 
    ![](media/lab4/task3/cloudshell3.png)
 
