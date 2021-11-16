@@ -24,7 +24,7 @@ In this exercise, you'll review how Cosmos DB stores data. Then you'll learn how
 
 6.  Open a command prompt window, navigate to desktop using the cd command, and run the second command to create another copy of the code and data required for the exercise.
 
-        >**Note**: You need a copy of the data on your computer because you'll run the tools to upload this data from your desktop.
+      >**Note**: You need a copy of the data on your computer because you'll run the tools to upload this data from your desktop.
 
     ``` 
         cd desktop
