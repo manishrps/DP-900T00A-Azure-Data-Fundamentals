@@ -82,7 +82,7 @@ In this exercise, you'll upload data to these data stores. You'll run queries ag
 
     ![Image of the Results page in the Data Migration Tool](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-results.png)
     
- >Note: If you get any errors while importing the data, perform the steps 8-15 again
+>Note: If you get any errors while importing the data, perform the steps 8-15 again
 
 16. Close the Data Migration Tool.
 
