@@ -48,10 +48,8 @@ In this exercise, you'll review how Cosmos DB stores data. Then you'll learn how
 
 10. In the Open dialog box, browse to the folder on the desktop where you cloned the repository containing the sample data for the exercise, move to the lab folder, move to the products folder, and select the productinfo.json file. Select Open.
 
-    ```
-      Note: The productinfo.json file contains the product information in JSON format. If you have time, you can examine the contents of this file using Notepad.
-    ```
-
+    >Note: The productinfo.json file contains the product information in JSON format. If you have time, you can examine the contents of this file using Notepad.
+   
     ![](media/lab4/6.png)
 11. Back on the Source Information page, select Next
 
