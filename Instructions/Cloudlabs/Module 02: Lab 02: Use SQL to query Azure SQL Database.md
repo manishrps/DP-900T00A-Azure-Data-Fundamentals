@@ -13,7 +13,7 @@ You'll use the built-in Query editor in the Azure portal to connect to the datab
 
     ![Environment details](media/environment-details.png "Environment details")
     
-    >**NOTE**: Note: DeploymentId can be obtained from the Lab Environment output page.
+    >**NOTE**: DeploymentId can be obtained from the Lab Environment output page.
 
 2.  In the portal, on the home page select **Resource groups**, and then select **DP900-DID** resource group, Where **DID** is the DeploymentID (Unique Id) which can be found from the Environment Details page.
 
