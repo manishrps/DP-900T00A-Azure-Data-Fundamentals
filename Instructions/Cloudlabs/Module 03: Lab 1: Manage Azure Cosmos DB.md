@@ -26,7 +26,7 @@ In this exercise, you'll review how Cosmos DB stores data. Then you'll learn how
 
        >**Note**: You need a copy of the data on your computer because you'll run the tools to upload this data from your desktop.
 
-     
+    ``` 
         cd desktop
         
         git clone https://github.com/MicrosoftDocs/mslearn-explore-non-relational-data-stores-azure.git lab
