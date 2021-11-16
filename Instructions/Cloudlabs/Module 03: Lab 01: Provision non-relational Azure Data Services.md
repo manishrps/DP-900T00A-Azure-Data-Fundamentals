@@ -12,7 +12,7 @@ In this exercise, you'll provision and configure the Cosmos DB account, and test
 You'll perform this exercise using the Azure portal.
 
 
-> Note: Azure can take as little as 5 minutes or as long as 20 minutes to create the Azure Cosmos DB account.
+>Note: Azure can take as little as 5 minutes or as long as 20 minutes to create the Azure Cosmos DB account.
 
 
 ### Task 1: Provision and configure a Cosmos DB database and container
@@ -196,7 +196,7 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
     Contoso will use this container to hold product images.
 
 
- > Note: The container created for Data Lake Storage will also appear in the Containers page. You could store image data in a Data Lake Storage container, but Contoso want to keep the images separate from product quality data.
+ >Note: The container created for Data Lake Storage will also appear in the Containers page. You could store image data in a Data Lake Storage container, but Contoso want to keep the images separate from product quality data.
 
 
 ### Step 4 : Create a file share
