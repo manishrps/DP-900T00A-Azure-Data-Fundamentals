@@ -33,8 +33,10 @@ You'll perform this exercise using the Azure portal.
 3.  On the New page, select Azure Cosmos DB.
 
     ![select cosmosdb](media/select-cosmosdb.png "select cosmosdb")
+    
+4. On the select API Option, select the **Core (SQL)**. 
 
-4.  On the Create Azure Cosmos DB Account page, on the Basics tabs, enter the details of the account using the values in the following table, and then select Review + create:
+5.  On the Create Azure Cosmos DB Account page, on the Basics tabs, enter the details of the account using the values in the following table, and then select Review + create:
 
     | Field | Value |
     | --- | --- |
@@ -57,9 +59,9 @@ You'll perform this exercise using the Azure portal.
     ![createcosmosdb](media/create-cosmosdb-2.png "create cosmosdb")
 
 
-5.  Wait while your settings are validated. If there's a problem, it will be reported at this stage, and you can go back and correct the issue.
+6.  Wait while your settings are validated. If there's a problem, it will be reported at this stage, and you can go back and correct the issue.
 
-6.  Select Create. It can take 10 or 15 minutes to create the account.
+7.  Select Create. It can take 10 or 15 minutes to create the account.
 
     ![validation success](media/validation-success.png "validation success")
     
