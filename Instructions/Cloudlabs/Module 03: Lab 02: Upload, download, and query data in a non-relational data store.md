@@ -81,10 +81,12 @@ In this exercise, you'll upload data to these data stores. You'll run queries ag
 15. Wait while the import proceeds. It should complete without any errors or warnings, and report that it has transferred 504 records.
 
     ![Image of the Results page in the Data Migration Tool](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-results.png)
+    
+ >Note: If you get any errors while importing the data, perform the steps 8-15 again
 
 16. Close the Data Migration Tool.
 
->Note: If you get any errors while importing the data, perform the steps 8-15 again
+
 
 ### Task 2: Query product data in Cosmos DB
 -------------------------------
