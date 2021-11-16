@@ -51,7 +51,7 @@ You'll perform this exercise using the Azure portal.
     | Geo-Redundancy | **Disable** |
     | Multi-region Writes | **Disable** |
     
-- Note  Where **DID** is the DeploymentID (Unique Id) which can be found from the Environment Details page.
+- Note  Where **DID** is the DeploymentID can be obtained from the Lab Environment output page.
 
     ![createcosmosdb](media/create-cosmosdb-1.png "create cosmosdb")
     
@@ -143,7 +143,7 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
     | Replication | **Geo-Zone-redundant storage (GZRS)** |
     | Access tier | **Hot** |
     
-- Note  Where **DID** is the DeploymentID (Unique Id) which can be found from the Environment Details page.
+  >Note  Where **DID** is the DeploymentID can be obtained from the Lab Environment output page.
 
     ![new storage account](media/str01.png "new sa")
 
