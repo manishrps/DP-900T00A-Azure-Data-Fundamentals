@@ -84,6 +84,8 @@ In this exercise, you'll upload data to these data stores. You'll run queries ag
 
 16. Close the Data Migration Tool.
 
+>Note: If you get any errors while importing the data, perform the steps 8-15 again
+
 ### Task 2: Query product data in Cosmos DB
 -------------------------------
 
