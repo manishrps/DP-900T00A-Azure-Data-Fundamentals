@@ -13,12 +13,7 @@ You'll use the built-in Query editor in the Azure portal to connect to the datab
 
     ![Environment details](media/environment-details.png "Environment details")
     
----
-**NOTE**-
-The DeploymentID (Unique Id) can be found from the Environment Details page.
-
----
-
+    >**NOTE**: Note: DeploymentId can be obtained from the Lab Environment output page.
 
 2.  In the portal, on the home page select **Resource groups**, and then select **DP900-DID** resource group, Where **DID** is the DeploymentID (Unique Id) which can be found from the Environment Details page.
 
@@ -28,7 +23,6 @@ The DeploymentID (Unique Id) can be found from the Environment Details page.
 3. Select the **Inventory SQL database**. 
     
     ![inventory](media/inventory-in-rg.png "inventory sql")
-
 
 3.  On the Overview page for your database, select **Set server firewall**.
 
@@ -50,10 +44,7 @@ The DeploymentID (Unique Id) can be found from the Environment Details page.
 
     ![db query](media/database-query.png "db query")
     
-```
-Tip: Adding your client IP in this step will not account for any existing VPN connections. If you can't complete step 7, disable any VPN connections or add the additional IP address manually from any errors displayed.
-```
-
+    >**Note**: Adding your client IP in this step will not account for any existing VPN connections. If you can't complete step 7, disable any VPN connections or add the additional IP address manually from any errors displayed.
 
 ### Task 2: Run queries against the database
 --------------------------------
