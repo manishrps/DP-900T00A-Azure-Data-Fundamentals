@@ -12,7 +12,7 @@ In this exercise, you'll provision and configure the Cosmos DB account, and test
 You'll perform this exercise using the Azure portal.
 
 
->Note: Azure can take as little as 5 minutes or as long as 20 minutes to create the Azure Cosmos DB account.
+ >Note: Azure can take as little as 5 minutes or as long as 20 minutes to create the Azure Cosmos DB account.
 
 
 ### Task 1: Provision and configure a Cosmos DB database and container
