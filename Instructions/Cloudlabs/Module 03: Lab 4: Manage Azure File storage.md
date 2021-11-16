@@ -56,43 +56,43 @@ Azure Storage Explorer is a utility that enables you to manage Azure Storage acc
 
     ![](media/lab4/task3/1.png)
 
-2.  On the Home page, select Storage accounts, and then select the storage account present in the page that starts with the name **storage**. Copy the storage account name into a notepad for later tasks.
+1.  On the Home page, select Storage accounts, and then select the storage account present in the page that starts with the name **storage**. Copy the storage account name into a notepad for later tasks.
 
-3.  On the Storage Account page, under **Security + networking**, select **Access Keys**.
+1.  On the Storage Account page, under **Security + networking**, select **Access Keys**.
 
     ![](media/lab4/sas1.png)
 
-4.  On the Access Keys page, Click on **show keys** and copy and paste **Storage account name** and **key** to notepad.
+1.  On the Access Keys page, Click on **show keys** and copy and paste **Storage account name** and **key** to notepad.
 
     ![](media/lab4/ac1.png)
 
-5.  Return to your desktop computer, and start Azure Storage Explorer.
+1.  Return to your desktop computer, and start Azure Storage Explorer.
 
     ![](media/lab4/task3/4-1.png)
 
-6.  In Azure Storage Explorer, expand Local & Attached, right-click Storage Accounts, and then select **Azure Storage**, In the popup window select **Storage account or service**
+1.  In Azure Storage Explorer, expand Local & Attached, right-click Storage Accounts, and then select **Azure Storage**, In the popup window select **Storage account or service**
 
     ![Image showing the Azure Storage Explorer. The user has selected Storage Accounts](https://docs.microsoft.com/en-us/learn/wwl-data-ai/explore-non-relational-data-stores-azure/media/6-local-attached.png)
     
     ![](media/lab4/se2.png)
 
-8.  In the Connect to Azure Storage dialog box, select **Account name and key**, and then select Next.
+1.  In the Connect to Azure Storage dialog box, select **Account name and key**, and then select Next.
 
     ![](media/lab4/se4-1.png)
 
-9.  On the Enter Connection Info page. In **Display name** and **Account name** fields, provide the **storage account name** and in **Account key** provide the key value which you have copied into a notepad, then select **Next**.
+1.  On the Enter Connection Info page. In **Display name** and **Account name** fields, provide the **storage account name** and in **Account key** provide the key value which you have copied into a notepad, then select **Next**.
 
     ![](media/lab4/se5.png)
 
-10.  On the Connection Summary page, select Connect.
+1.  On the Connection Summary page, select Connect.
 
      ![](media/lab4/se6.png)
 
-11. In Azure Storage Explorer, under Storage Accounts, expand Storage{deploymentID}. Verify that folders appear for Blob Containers and File Shares.
+1. In Azure Storage Explorer, under Storage Accounts, expand Storageaccount which you have used in the above steps. Verify that folders appear for Blob Containers and File Shares.
 
    ![](media/lab4/task3/8new.png)
 
-12. Right-click File Shares, and then select Create File Share. Add a file share named documents.
+1. Right-click File Shares, and then select Create File Share. Add a file share named documents.
 
    ![](media/lab4/task3/10-1.png)
 
