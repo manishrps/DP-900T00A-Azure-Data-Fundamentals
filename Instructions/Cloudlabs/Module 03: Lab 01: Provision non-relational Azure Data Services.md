@@ -207,7 +207,7 @@ Note: The container created for Data Lake Storage will also appear in the Conta
 
 2.  On the File shares page, select + File share, create a new file share named reports. Leave the Quota **empty** and Tier as **Transaction optimized**.
 
-    ![File share](media/add-fs-sa.png "file share")
+    ![File share](media/dp9001.png "file share")
 
 3.  On the File shares page, double-click the reports file share.
 
