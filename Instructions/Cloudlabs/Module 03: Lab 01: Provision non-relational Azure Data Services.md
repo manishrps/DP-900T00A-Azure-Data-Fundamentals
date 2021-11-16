@@ -24,12 +24,7 @@ You'll perform this exercise using the Azure portal.
 
     ![Environment details](media/environment-details.png "Environment details")
 
----
-**NOTE**-
-The DeploymentID (Unique Id) can be found from the Environment Details page.
-
----
-
+ >**Note** - The DeploymentID can be obtained from the Lab Environment output page.
 
 2.  From the left-hand navigation menu in the Azure portal, select Create a resource.
 
@@ -45,7 +40,7 @@ The DeploymentID (Unique Id) can be found from the Environment Details page.
     | --- | --- |
     | Subscription | **Default Subscription** |
     | Resource Group | **DP900-DID** |
-    | Account Name | **cosmosdbaccountDID**, Where **DID** is the DeploymentID (Unique Id) which can be found from the Environment Details page. |
+    | Account Name | **cosmosdbaccountDID**, Where **DID** is the DeploymentID can be obtained from the Lab Environment output page. |
     | API | **Core (SQL)** |
     | Location | **Accept the default location** |
     | Capacity mode | **Provisioned throughput** |
@@ -141,7 +136,7 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
     | --- | --- |
     | Subscription | **Default Subscription** |
     | Resource Group | **DP900-DID** |
-    | Storage account Name | **datastorageDID**, Where **DID** is the DeploymentID (Unique Id) which can be found from the Environment Details page. |
+    | Storage account Name | **datastorageDID**, Where **DID** is the DeploymentID DeploymentID can be obtained from the Lab Environment output page. |
     | Performance | **Standard** |
     | Replication | **Geo-Zone-redundant storage (GZRS)** |
     | Access tier | **Hot** |
