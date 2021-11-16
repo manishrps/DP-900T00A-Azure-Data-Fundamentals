@@ -26,11 +26,8 @@ Over time if you realize you need additional compute power to keep up with deman
 
     ![Environment details](media/environment-details.png "Environment details")
     
----
-**NOTE**-
- The DeploymentID (Unique Id) can be found from the Environment Details page.
 
----
+   >**NOTE**- The DeploymentID can be obtained from the Lab Environment output page.
 
 2.  In the portal, select Create a resource from the upper left-hand corner. Select Databases, then select SQL Database.
 
@@ -42,7 +39,7 @@ Over time if you realize you need additional compute power to keep up with deman
     | --- | --- |
     | Subscription | **Default Subscription** |
     | Resource group | **DP900-DID** |
-    | Database name | **ContosoDID**, Where **DID** is the DeploymentID (Unique Id) which can be found from the Environment Details page. |
+    | Database name | **ContosoDID**, Where **DID** is the DeploymentID can be obtained from the Lab Environment output page. |
     | Want to use SQL elastic pool? | **No** |
 
     ![create sql database](media/sql-database-create.png "Creating SQl database")
@@ -51,7 +48,7 @@ Over time if you realize you need additional compute power to keep up with deman
 
     | Setting | Value  |
     | --- | --- |
-    | Server name | **sqlDID** ,Where **DID** is the DeploymentID (Unique Id) which can be found from the Environment Details page. |
+    | Server name | **sqlDID** ,Where **DID** is the DeploymentID can be obtained from the Lab Environment output page.|
     | Server admin login | **azureadmin** |
     | Password | **Pa55w.rd** |
     | Confirm password | **Pa55w.rd** |
@@ -111,7 +108,7 @@ In this exercise, you'll set up Azure Database for PostgreSQL
 
     | Setting | Value  |
     | --- | --- |
-    | Server name | Enter **postgresqlDID**, Where **DID** is the DeploymentID (Unique Id) which can be found from the Environment Details page. |
+    | Server name | Enter **postgresqlDID**, Where **DID** is the DeploymentID can be obtained from the Lab Environment output page.|
     | Data source | **None** |
     | Location | **Select the default location** |
     | Version | **Keep default setting** |
@@ -166,7 +163,7 @@ In this exercise you'll set up Azure Database for MySQL
 
     | Setting | Value  |
     | --- | --- |
-    | Server name | Enter **mysqlDID**, Where **DID** is the DeploymentID (Unique Id) which can be found from the Environment Details page. |
+    | Server name | Enter **mysqlDID**, Where **DID** is the DeploymentID can be obtained from the Lab Environment output page. |
     | Data source | **None** |
     | Location | **Select the default location** |
     | Version | **Keep default setting** |
