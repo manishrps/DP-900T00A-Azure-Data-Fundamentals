@@ -138,7 +138,7 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
     | --- | --- |
     | Subscription | **Default Subscription** |
     | Resource Group | **DP900-DID** |
-    | Storage account Name | **datastorageDID**, Where **DID** is the DeploymentID DeploymentID can be obtained from the Lab Environment output page. |
+    | Storage account Name | **datastorageDID**, Where **DID** is the DeploymentID can be obtained from the Lab Environment output page. |
     | Performance | **Standard** |
     | Replication | **Geo-Zone-redundant storage (GZRS)** |
     | Access tier | **Hot** |
