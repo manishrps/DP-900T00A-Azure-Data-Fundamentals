@@ -204,7 +204,7 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
 
 2.  On the File shares page, select + File share, create a new file share named reports. Leave the Quota **empty** and Tier as **Transaction optimized**.
 
-    ![File share](media/dp9001.png "file share")
+    ![File share](media/dp9001.png "file share") and click on Create.
 
 3.  On the File shares page, double-click the reports file share.
 
