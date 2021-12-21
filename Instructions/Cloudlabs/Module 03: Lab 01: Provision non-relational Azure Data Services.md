@@ -145,11 +145,11 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
     
   >Note  Where **DID** is the DeploymentID can be obtained from the Lab Environment output page.
 
-    ![new storage account](media/str01.png "new sa")
+   ![storage account](media/str01.png "new sa")
 
 4.  Select Advanced. On the Advanced page, in the Data Lake Storage Gen2 section, select Enabled, and then select Review + create.
 
-    ![new storage account](media/str02.png "new sa")
+     ![new storage account](media/str02.png "new sa")
 
 5.  If your settings are validated correctly, select Create.
 
