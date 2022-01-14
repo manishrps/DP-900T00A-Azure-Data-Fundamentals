@@ -30,7 +30,7 @@ You'll perform this exercise using the Azure portal.
 
     ![create a resource](media/create-a-resource-navigation.png "create a resource")
 
-3.  On the New page, select Azure Cosmos DB.
+3.  On the create a resource page, select Azure Cosmos DB.
 
     ![select cosmosdb](media/select-cosmosdb.png "select cosmosdb")
     
