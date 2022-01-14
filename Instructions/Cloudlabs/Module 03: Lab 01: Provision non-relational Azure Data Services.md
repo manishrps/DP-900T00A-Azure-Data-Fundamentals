@@ -43,11 +43,9 @@ You'll perform this exercise using the Azure portal.
     | Subscription | **Default Subscription** |
     | Resource Group | **DP900-DID** |
     | Account Name | **cosmosdbaccountDID**, Where **DID** is the DeploymentID can be obtained from the Lab Environment output page. |
-    | API | **Core (SQL)** |
     | Location | **Accept the default location** |
     | Capacity mode | **Provisioned throughput** |
     | Apply Free Tier Discount | **Do Not Apply** |
-    | Account Type | **Non-Production** |
     | Geo-Redundancy | **Disable** |
     | Multi-region Writes | **Disable** |
     
@@ -84,7 +82,7 @@ You'll perform this exercise using the Azure portal.
     | Field | Value |
     | --- | --- |
     | Database ID | Select Create new, and enter **contosodb** |
-    | Provision database throughput | **Check** |
+    | Share database throughput | **Check** |
     | Throughput | Select **Manual**, and specify 400 RU/s (the default) |
     | Container ID | **productvolumes** |
     | Partition key | **/productid** (Each product will have a new level recorded each day. Partitioning by product ID enables you to quickly report how the levels for a product vary over time.) |
@@ -128,7 +126,7 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
 
     ![create a resource](media/create-a-resource-navigation.png "create a resource")
     
-2.  On the New page, select Storage account - blob, file, table, queue.
+2.  On the create a resource, select Storage account - blob, file, table, queue.
 
     ![storage account select](media/storage-account-select.png "storage account select")
 
