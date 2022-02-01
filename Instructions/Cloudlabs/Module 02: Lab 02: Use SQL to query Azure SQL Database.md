@@ -36,7 +36,7 @@ You'll use the built-in Query editor in the Azure portal to connect to the datab
 
 7.  On the Overview page, select **Query editor (preview)** in the left menu.
 
-8.  Enter the username and password, this can be found from the **environment details** tab under this resource group **DP900-XXXX**. Select **OK**.
+8.  Enter the administrator login and administrator password, this can be found from the **environment details** tab under this resource group **DP900-XXXX**. Select **OK**.
 
     ![db login](media/database-login.png "db login")
 
