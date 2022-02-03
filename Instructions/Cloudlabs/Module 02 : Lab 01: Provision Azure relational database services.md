@@ -29,7 +29,7 @@ Over time if you realize you need additional compute power to keep up with deman
 
     >**NOTE**- The DeploymentID can be obtained from the Lab Environment output page.
 
-2.  In the portal, select Create a resource from the upper left-hand corner. Select Databases, then select SQL Database.
+2.  In the portal, select **Create a resource** from the upper left-hand corner. Select Databases, then select SQL Database.
 
     ![create sql database](media/create-sql-database.png "create sql database")
 
@@ -44,7 +44,7 @@ Over time if you realize you need additional compute power to keep up with deman
 
     ![create sql database](media/sql-database-create.png "Creating SQl database")
 
-4.  Under Server, select Create new, fill out the form with the following values, and then select OK:
+4.  Under Server, select Create new, fill out the form with the following values, and then select **OK**:
 
     | Setting | Value  |
     | --- | --- |
@@ -56,11 +56,11 @@ Over time if you realize you need additional compute power to keep up with deman
     
     ![new server](media/sql-new-server-create.png "new server")
 
-5.  Under Compute + storage, select Configure database.
+5.  Under Compute + storage, select **Configure database**.
 
-6.  On the General Purpose tab, leave vCores set to **2**, change Data max size to **50 GB**, and then select Apply.
+6.  On the Configure page, leave vCores set to **2**, change Data max size to **50 GB**, and then select **Apply**.
 
-7.  Back on the Create SQL Database page, select Additional settings.
+7.  Back on the Create SQL Database page, select **Additional settings** tab from top header.
 
 8.  Use these values to fill out the form.
 
@@ -72,13 +72,7 @@ Over time if you realize you need additional compute power to keep up with deman
 
     ![new server](media/sql-database-additionalsetting.png "additional")
 
-9.  Select Review + Create, and then select Create to create your Azure SQL database.
-
-10. On the toolbar, select Notifications to monitor the deployment process.
-
-    When the process completes, select Pin to dashboard to pin your database server to the dashboard so that you have quick access when you need it later.
-    
-    ![Sql database](media/sqldatabase-deployment.png "Sql database")
+9.  Select Review + Create, and then select **Create** to create your Azure SQL database.
     
 
 ### Task 2: Create your Azure Database for PostgreSQL service (Optional)
@@ -86,17 +80,19 @@ Over time if you realize you need additional compute power to keep up with deman
 
 In this exercise, you'll set up Azure Database for PostgreSQL
 
-1.  Open Edge Browser and log in to the Azure portal. When prompted, use the credentials provided within the Environment Details tab of the lab guide.
+1.  On the Azure portal, select **Create a resource** from the upper left-hand corner.
 
-2.  In the portal, select Create a resource from the upper left-hand corner. Select Databases, then select Azure Database for PostgreSQL.
+2.  Select Databases, then select Azure Database for PostgreSQL.
 
     ![create postgre database](media/create-postgresql-database.png "create postgre database")
 
-3.  You will be presented with the choice of a **Single server** or **Hyperscale**. Select Create for the Single server option
+3.  On **Select Azure Database for PostgreSQL deployment option** page, Select **Single Server** then click on **Create**.
 
     ![select postgre service](media/postgresql-service-select.png "select postgre service")
+    
+4. On pop-up of **Consider creating flexible server**, Select **No - Create single server**.
 
-4.  Use these values to start filling out the form.
+5.  Use these values to start filling out the form.
 
     | Setting | Value  |
     | --- | --- |
@@ -104,7 +100,7 @@ In this exercise, you'll set up Azure Database for PostgreSQL
     | Resource group | **DP900-DID** |
     
 
-5.  Under Server details, use these values
+6.  Under Server details, use these values
 
     | Setting | Value  |
     | --- | --- |
@@ -115,13 +111,13 @@ In this exercise, you'll set up Azure Database for PostgreSQL
     
     ![select postgre service](media/postgresql-setup.png "select postgre service")
 
-6.  Under Compute + storage, select Configure server.
+7.  Under Compute + storage, select Configure server.
 
-7.  Change vCore to **two cores**, increase the storage to **160 GB**, set the Backup Retention Period to **14 days**, and then select OK.
+8.  Change vCore to **two cores**, increase the storage to **160 GB**, set the Backup Retention Period to **14 days**, and then select **OK**.
     
     ![select postgre service](media/postgresql-configure.png "postgre configure")
 
-8.  Back on the Single server page, under Administrator account, specify these values:
+9.  Back on the Single server page, under Administrator account, specify these values:
 
     | Setting | Value  |
     | --- | --- |
@@ -129,22 +125,16 @@ In this exercise, you'll set up Azure Database for PostgreSQL
     | Password | **Pa55w.rd** |
     | Confirm password | **Pa55w.rd** |
 
-9.  Select Review + Create, and then select Create to create your Azure PostgreSQL database.
+10.  Select Review + Create, and then select **Create** to create your Azure PostgreSQL database.
 
-10. On the toolbar, select Notifications to monitor the deployment process.
-
-    When the process completes, select Pin to dashboard to pin your database server to the dashboard so that you have quick access when you need it later.
-    
-    ![postgresql](media/postgresql-deployment.png "postgresql")
-    
 ### Task 3 : Create your Azure Database for MySQL service (Optional)
  --------------------------------------------
 
 In this exercise you'll set up Azure Database for MySQL
 
-1.  Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com) using the same account you activated the sandbox with.
+1.  On the Azure portal, select **Create a resource** from the upper left-hand corner.
 
-2.  From the portal, select Create a resource from the upper left-hand corner. Select Databases, then select Azure Database for MySQL.
+2.  Select Databases, then select Azure Database for MySQL.
 
     ![azure database for sql](media/create-azure-database-forsql.png "azure database for sql")
 
@@ -170,9 +160,9 @@ In this exercise you'll set up Azure Database for MySQL
 
     ![mysql create](media/mysql-create.png "mysql create")
 
-6.  Under Compute + storage, select configure server.
+6.  Under Compute + storage, select **configure server**.
 
-7.  On the Pricing tier page, reduce vCore to **two cores**, set Storage between **160 GB** to **170 GB**, change Backup Retention Period to **14 days**, and then select apply.
+7.  On the Pricing tier page, reduce vCore to **two cores**, set Storage between **160 GB** to **170 GB**, change Backup Retention Period to **14 days**, and then select **apply**.
 
     ![configure azure database](media/configure-azure-database-mysql.png "configure azure database") 
 
@@ -184,10 +174,4 @@ In this exercise you'll set up Azure Database for MySQL
     | Password | **Pa55w.rd** |
     | Confirm password | **Pa55w.rd** |
 
-9.  Select Review + Create, and then select Create to create your Azure MySQL database.
-
-10.  On the toolbar, select Notifications to monitor the deployment process.
-
-     When the process completes, select Pin to dashboard to pin your database server to the dashboard so that you have quick access when you need it later.
-
-     ![mysql](media/mysqlserver-deployment.png "mysql")
+9.  Select Review + Create, and then select **Create** to create your Azure MySQL database.
